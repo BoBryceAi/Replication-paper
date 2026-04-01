@@ -2,6 +2,10 @@
 
 This repository hosts compiled replication-paper PDFs generated from the local patent-literature workflow.
 
+## Featured Data-Backed Paper 2026-04-02
+
+- [Ghosh et al. (2014) data-backed reproduction](papers/2026-04-02/ghosh-2014-data-backed-reproduction.pdf) - Ambition Is Nothing Without Focus: local DISCERN/PatentView/WRDS/CRSP/Compustat-based paper-comparable reproduction with fresh rerun results
+
 ## Batch 2026-04-01
 
 - [Arts, Cassiman, and Hou (2023)](papers/2026-04-01/arts-cassiman-hou-2023-technology-space.pdf) - Position and Differentiation of Firms in Technology Space
