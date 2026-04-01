@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Replication Papers</title>
+  <style>
+    :root {
+      --bg: #f4f1ea;
+      --ink: #1f2a35;
+      --accent: #1f6feb;
+      --card: #fffdf8;
+      --line: #d8cfbf;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at top left, rgba(31,111,235,0.08), transparent 28%),
+        linear-gradient(180deg, #f8f5ee 0%, var(--bg) 100%);
+      color: var(--ink);
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 20px 64px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 4vw, 3.3rem);
+      line-height: 1.05;
+    }
+
+    p.lead {
+      max-width: 760px;
+      font-size: 1.08rem;
+      line-height: 1.7;
+      margin: 0 0 28px;
+    }
+
+    .batch {
+      margin-top: 28px;
+      padding: 24px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(31, 42, 53, 0.06);
+    }
+
+    .batch h2 {
+      margin: 0 0 8px;
+      font-size: 1.5rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 0;
+      display: grid;
+      gap: 14px;
+    }
+
+    li {
+      padding: 16px 18px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255,255,255,0.72);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .meta {
+      display: block;
+      margin-top: 6px;
+      font-size: 0.95rem;
+      color: #5a6672;
+      font-weight: 400;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Replication Paper Library</h1>
+    <p class="lead">
+      This site publishes the first batch of replication-paper PDFs generated from the patent-literature workflow.
+      Each PDF is a paper-style replication dossier with source inventory, data-design notes, derivations, and a LaTeX-built manuscript.
+    </p>
+
+    <section class="batch">
+      <h2>Batch: 2026-04-01</h2>
+      <p>Five replication papers built from the local workflow and compiled with MiKTeX.</p>
+      <ul>
+        <li>
+          <a href="papers/2026-04-01/arts-cassiman-hou-2023-technology-space.pdf">Arts, Cassiman, and Hou (2023)</a>
+          <span class="meta">Position and Differentiation of Firms in Technology Space</span>
+        </li>
+        <li>
+          <a href="papers/2026-04-01/owen-smith-powell-2004-knowledge-networks.pdf">Owen-Smith and Powell (2004)</a>
+          <span class="meta">Knowledge Networks as Channels and Conduits</span>
+        </li>
+        <li>
+          <a href="papers/2026-04-01/cohen-gurun-kominers-2014-patent-trolls.pdf">Cohen, Gurun, and Kominers (2014)</a>
+          <span class="meta">Patent Trolls: Evidence from Targeted Firms</span>
+        </li>
+        <li>
+          <a href="papers/2026-04-01/ma-tong-wang-2021-bankrupt-innovative-firms.pdf">Ma, Tong, and Wang (2021)</a>
+          <span class="meta">Bankrupt Innovative Firms</span>
+        </li>
+        <li>
+          <a href="papers/2026-04-01/melero-palomeras-wehrheim-2020-inventor-mobility.pdf">Melero, Palomeras, and Wehrheim (2020)</a>
+          <span class="meta">The Effect of Patent Protection on Inventor Mobility</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
