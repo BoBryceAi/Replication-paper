@@ -5,163 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Replication Papers</title>
   <style>
-    :root {
-      --bg: #f4f1ea;
-      --ink: #1f2a35;
-      --accent: #1f6feb;
-      --card: #fffdf8;
-      --line: #d8cfbf;
-    }
-
+    :root { --bg: #f4f1ea; --ink: #1f2a35; --accent: #1f6feb; --card: #fffdf8; --line: #d8cfbf; }
     * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      background:
-        radial-gradient(circle at top left, rgba(31,111,235,0.08), transparent 28%),
-        linear-gradient(180deg, #f8f5ee 0%, var(--bg) 100%);
-      color: var(--ink);
-    }
-
-    main {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 48px 20px 64px;
-    }
-
-    h1 {
-      margin: 0 0 12px;
-      font-size: clamp(2rem, 4vw, 3.3rem);
-      line-height: 1.05;
-    }
-
-    p.lead {
-      max-width: 760px;
-      font-size: 1.08rem;
-      line-height: 1.7;
-      margin: 0 0 28px;
-    }
-
-    .batch {
-      margin-top: 28px;
-      padding: 24px;
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      box-shadow: 0 12px 30px rgba(31, 42, 53, 0.06);
-    }
-
-    .batch h2 {
-      margin: 0 0 8px;
-      font-size: 1.5rem;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 20px 0 0;
-      display: grid;
-      gap: 14px;
-    }
-
-    li {
-      padding: 16px 18px;
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      background: rgba(255,255,255,0.72);
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 700;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .meta {
-      display: block;
-      margin-top: 6px;
-      font-size: 0.95rem;
-      color: #5a6672;
-      font-weight: 400;
-    }
+    body { margin: 0; font-family: Georgia, "Times New Roman", serif; background: radial-gradient(circle at top left, rgba(31,111,235,0.08), transparent 28%), linear-gradient(180deg, #f8f5ee 0%, var(--bg) 100%); color: var(--ink); }
+    main { max-width: 960px; margin: 0 auto; padding: 48px 20px 64px; }
+    h1 { margin: 0 0 12px; font-size: clamp(2rem, 4vw, 3.3rem); line-height: 1.05; }
+    p.lead { max-width: 760px; font-size: 1.08rem; line-height: 1.7; margin: 0 0 28px; }
+    .batch { margin-top: 28px; padding: 24px; background: var(--card); border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 12px 30px rgba(31, 42, 53, 0.06); }
+    ul { list-style: none; padding: 0; margin: 20px 0 0; display: grid; gap: 14px; }
+    li { padding: 16px 18px; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,0.72); }
+    a { color: var(--accent); text-decoration: none; font-weight: 700; }
+    a:hover { text-decoration: underline; }
+    .meta { display: block; margin-top: 6px; font-size: 0.95rem; color: #5a6672; font-weight: 400; }
+    .note { margin-top: 20px; color: #5a6672; font-size: 0.95rem; }
   </style>
 </head>
 <body>
   <main>
     <h1>Replication Paper Library</h1>
-    <p class="lead">
-      This site publishes replication-paper PDFs generated from the patent-literature workflow.
-      Some papers are full local data-backed reruns, while others are structured protocol papers that document the exact missing inputs needed for later execution.
-    </p>
-
+    <p class="lead">This site publishes local data-backed patent-literature replications generated from the workspace. The 2026-04-04 batch contains five executable journal-style papers backed by local result CSVs and compiled PDFs.</p>
     <section class="batch">
-      <h2>Featured Data-Backed Paper: 2026-04-02</h2>
-      <p>A full local rerun using the actual DISCERN, PatentView, WRDS/CRSP/CCM, and Compustat-linked files in the workspace.</p>
+      <h2>Batch: 2026-04-04</h2>
       <ul>
         <li>
-          <a href="papers/2026-04-02/ghosh-2014-data-backed-reproduction.pdf">Ghosh et al. (2014) Data-Backed Reproduction</a>
-          <span class="meta">Ambition Is Nothing Without Focus: local data-backed paper-comparable reproduction with fresh counts and model estimates</span>
+          <a href="papers/2026-04-04/arts-cassiman-hou-2023-technology-space.pdf">Arts, Cassiman, and Hou (2023)</a>
+          <span class="meta">rows: 5,192; entities: 443; tech_diff = -0.1935; p = 0.7841</span>
+        </li>
+        <li>
+          <a href="papers/2026-04-04/ghosh-2014-data-backed-reproduction.pdf">Ghosh, Martin, Pennings, and Wezel (2014)</a>
+          <span class="meta">rows: 489,193; entities: 200; breadth x org_recomb_exp_log = -0.0022; p = 0.0076</span>
+        </li>
+        <li>
+          <a href="papers/2026-04-04/katila-ahuja-2002-search-behavior.pdf">Katila and Ahuja (2002)</a>
+          <span class="meta">rows: 2,174; entities: 162; search_depth = -0.2243; search_depth^2 = 0.1059</span>
+        </li>
+        <li>
+          <a href="papers/2026-04-04/katila-chen-2008-search-timing.pdf">Katila and Chen (2008)</a>
+          <span class="meta">rows: 4,839; entities: 167; ahead vs sync on event quality = -0.0854; p = 0.1178</span>
+        </li>
+        <li>
+          <a href="papers/2026-04-04/rosenkopf-2001-beyond-local-search.pdf">Rosenkopf (2001)</a>
+          <span class="meta">rows: 23,844; entities: 184; boundary_existing_field = -0.0389; boundary_new_field = 0.1126</span>
         </li>
       </ul>
-    </section>
-
-    <section class="batch">
-      <h2>Batch: 2026-04-02</h2>
-      <p>One executable data-backed replication plus four structured protocol papers for the next locally feasible targets.</p>
-      <ul>
-        <li>
-          <a href="papers/2026-04-02/ghosh-2014-data-backed-reproduction.pdf">Ghosh et al. (2014)</a>
-          <span class="meta">Executable local rerun: Ambition Is Nothing Without Focus</span>
-        </li>
-        <li>
-          <a href="papers/2026-04-02/arts-cassiman-hou-2023-technology-space.pdf">Arts, Cassiman, and Hou (2023)</a>
-          <span class="meta">Protocol paper: technology-space differentiation, pending exact text-preprocessing and market-control inputs</span>
-        </li>
-        <li>
-          <a href="papers/2026-04-02/cohen-gurun-kominers-2014-patent-trolls.pdf">Cohen, Gurun, and Kominers (2014)</a>
-          <span class="meta">Protocol paper: patent-troll targeting, pending NPE litigation and legal-readiness data</span>
-        </li>
-        <li>
-          <a href="papers/2026-04-02/ma-tong-wang-2021-bankrupt-innovative-firms.pdf">Ma, Tong, and Wang (2021)</a>
-          <span class="meta">Protocol paper: bankruptcy and patent sales, pending Chapter 11 and transaction data</span>
-        </li>
-        <li>
-          <a href="papers/2026-04-02/melero-palomeras-wehrheim-2020-inventor-mobility.pdf">Melero, Palomeras, and Wehrheim (2020)</a>
-          <span class="meta">Protocol paper: inventor mobility, pending examiner-assignment and inventor-employer panel data</span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="batch">
-      <h2>Batch: 2026-04-01</h2>
-      <p>Five replication papers built from the local workflow and compiled with MiKTeX.</p>
-      <ul>
-        <li>
-          <a href="papers/2026-04-01/arts-cassiman-hou-2023-technology-space.pdf">Arts, Cassiman, and Hou (2023)</a>
-          <span class="meta">Position and Differentiation of Firms in Technology Space</span>
-        </li>
-        <li>
-          <a href="papers/2026-04-01/owen-smith-powell-2004-knowledge-networks.pdf">Owen-Smith and Powell (2004)</a>
-          <span class="meta">Knowledge Networks as Channels and Conduits</span>
-        </li>
-        <li>
-          <a href="papers/2026-04-01/cohen-gurun-kominers-2014-patent-trolls.pdf">Cohen, Gurun, and Kominers (2014)</a>
-          <span class="meta">Patent Trolls: Evidence from Targeted Firms</span>
-        </li>
-        <li>
-          <a href="papers/2026-04-01/ma-tong-wang-2021-bankrupt-innovative-firms.pdf">Ma, Tong, and Wang (2021)</a>
-          <span class="meta">Bankrupt Innovative Firms</span>
-        </li>
-        <li>
-          <a href="papers/2026-04-01/melero-palomeras-wehrheim-2020-inventor-mobility.pdf">Melero, Palomeras, and Wehrheim (2020)</a>
-          <span class="meta">The Effect of Patent Protection on Inventor Mobility</span>
-        </li>
-      </ul>
+      <p class="note">Source repository: <a href="https://github.com/BoBryceAi/Replication-paper">BoBryceAi/Replication-paper</a>. These PDFs were produced through the calculated-replication workflow and expanded with the installed journal-writing skill into long-form upload-ready manuscripts.</p>
     </section>
   </main>
 </body>

@@ -1,28 +1,20 @@
 # Replication Paper Library
 
-This repository hosts compiled replication-paper PDFs generated from the local patent-literature workflow.
+This library hosts compiled patent-literature replication PDFs generated from the local workspace.
 
-## Batch 2026-04-02
+Repository: <https://github.com/BoBryceAi/Replication-paper>
 
-- [Ghosh et al. (2014) data-backed reproduction](papers/2026-04-02/ghosh-2014-data-backed-reproduction.pdf) - executable local DISCERN/PatentView/WRDS/CRSP/Compustat-based paper-comparable reproduction with fresh rerun results
-- [Arts, Cassiman, and Hou (2023)](papers/2026-04-02/arts-cassiman-hou-2023-technology-space.pdf) - structured replication protocol for technology-space differentiation; not yet locally rerun because the exact text-preprocessing and market-control pipeline are still missing
-- [Cohen, Gurun, and Kominers (2014)](papers/2026-04-02/cohen-gurun-kominers-2014-patent-trolls.pdf) - structured replication protocol for patent-troll targeting; missing NPE litigation and legal-readiness data
-- [Ma, Tong, and Wang (2021)](papers/2026-04-02/ma-tong-wang-2021-bankrupt-innovative-firms.pdf) - structured replication protocol for bankrupt innovative firms; missing Chapter 11, DIP financing, collateral, and patent-sale data
-- [Melero, Palomeras, and Wehrheim (2020)](papers/2026-04-02/melero-palomeras-wehrheim-2020-inventor-mobility.pdf) - structured replication protocol for inventor mobility; missing examiner assignment and inventor-employer panel data
+## Batch 2026-04-04
 
-## Featured Data-Backed Paper 2026-04-02
-
-- [Ghosh et al. (2014) data-backed reproduction](papers/2026-04-02/ghosh-2014-data-backed-reproduction.pdf) - Ambition Is Nothing Without Focus: local DISCERN/PatentView/WRDS/CRSP/Compustat-based paper-comparable reproduction with fresh rerun results
-
-## Batch 2026-04-01
-
-- [Arts, Cassiman, and Hou (2023)](papers/2026-04-01/arts-cassiman-hou-2023-technology-space.pdf) - Position and Differentiation of Firms in Technology Space
-- [Owen-Smith and Powell (2004)](papers/2026-04-01/owen-smith-powell-2004-knowledge-networks.pdf) - Knowledge Networks as Channels and Conduits
-- [Cohen, Gurun, and Kominers (2014)](papers/2026-04-01/cohen-gurun-kominers-2014-patent-trolls.pdf) - Patent Trolls: Evidence from Targeted Firms
-- [Ma, Tong, and Wang (2021)](papers/2026-04-01/ma-tong-wang-2021-bankrupt-innovative-firms.pdf) - Bankrupt Innovative Firms
-- [Melero, Palomeras, and Wehrheim (2020)](papers/2026-04-01/melero-palomeras-wehrheim-2020-inventor-mobility.pdf) - The Effect of Patent Protection on Inventor Mobility
+- [Arts, Cassiman, and Hou (2023)](papers/2026-04-04/arts-cassiman-hou-2023-technology-space.pdf) - sample rows: 5,192, entities: 443, headline `tech_diff = -0.1935`, `p = 0.7841`
+- [Ghosh, Martin, Pennings, and Wezel (2014)](papers/2026-04-04/ghosh-2014-data-backed-reproduction.pdf) - sample rows: 489,193, entities: 200, headline `breadth x org_recomb_exp_log = -0.0022`, `p = 0.0076`
+- [Katila and Ahuja (2002)](papers/2026-04-04/katila-ahuja-2002-search-behavior.pdf) - sample rows: 2,174, entities: 162, headline `search_depth = -0.2243`, `search_depth^2 = 0.1059`
+- [Katila and Chen (2008)](papers/2026-04-04/katila-chen-2008-search-timing.pdf) - sample rows: 4,839, entities: 167, headline `ahead vs sync on event quality = -0.0854`, `p = 0.1178`
+- [Rosenkopf (2001)](papers/2026-04-04/rosenkopf-2001-beyond-local-search.pdf) - sample rows: 23,844, entities: 184, headline `boundary_existing_field = -0.0389`, `boundary_new_field = 0.1126`
 
 ## Notes
 
-- The PDFs were compiled locally with MiKTeX.
-- The source LaTeX drafts and replication notes live in the local research workspace.
+- All five PDFs in the 2026-04-04 batch compiled locally with MiKTeX on 2026-04-04.
+- Each paper is backed by local result CSVs stored under `patent literature/daily_replications/2026-04-04`.
+- The publish target for this library is the GitHub repository `BoBryceAi/Replication-paper`.
+- The manuscript workflow now uses the installed Codex skill `write-replication-journal-github` to turn calculated replication folders into 30-40 page journal-style PDFs for upload.
