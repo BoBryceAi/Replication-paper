@@ -102,9 +102,22 @@ New-Item -ItemType Directory -Force -Path $targetRoot | Out-Null
 $targetDirectory = Get-Item -LiteralPath $targetRoot
 $usedTargetNames = New-Object 'System.Collections.Generic.HashSet[string]'
 
-$paperDirectories = @(Get-ChildItem -Path $batchRoot -Directory | Sort-Object Name | Where-Object {
-    Test-Path (Join-Path $_.FullName "paper\main.pdf")
-})
+$summaryCsv = Join-Path $batchRoot "calculated_batch_summary.csv"
+if (Test-Path $summaryCsv) {
+    $slugs = @(Import-Csv -LiteralPath $summaryCsv | ForEach-Object { $_.slug } | Where-Object { -not [string]::IsNullOrWhiteSpace($_) })
+    $paperDirectories = @()
+    foreach ($slug in $slugs) {
+        $target = Join-Path $batchRoot $slug
+        if (Test-Path (Join-Path $target "paper\main.pdf")) {
+            $paperDirectories += Get-Item -LiteralPath $target
+        }
+    }
+}
+else {
+    $paperDirectories = @(Get-ChildItem -Path $batchRoot -Directory | Sort-Object Name | Where-Object {
+        Test-Path (Join-Path $_.FullName "paper\main.pdf")
+    })
+}
 
 if ($paperDirectories.Count -eq 0) {
     throw "No compiled paper/main.pdf files were found in $batchRoot"

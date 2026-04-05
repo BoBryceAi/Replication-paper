@@ -14,19 +14,19 @@ This repository is the public website and PDF archive for AI-assisted strategy r
 
 ## Current site totals
 
-- published papers: 5
-- published batches: 1
-- analyzed rows across batches: 525,242
-- headline estimates with p < .05: 1
-- latest batch: April 4, 2026
+- published papers: 10
+- published batches: 2
+- analyzed rows across batches: 1,289,755
+- headline estimates with p < .05: 5
+- latest batch: April 5, 2026
 
 ## Latest batch
 
-- [Arts, Cassiman, and Hou (2023)](papers/2026-04-04/arts-cassiman-hou-2023-technology-space.pdf) - rows: 5,192, entities: 443, `tech_diff = -0.1935`; `p = 0.78`
-- [Ghosh, Martin, Pennings, and Wezel (2014)](papers/2026-04-04/ghosh-2014-data-backed-reproduction.pdf) - rows: 489,193, entities: 200, `breadth x org_recomb_exp_log = -0.0022`; `p = 0.008`
-- [Katila and Ahuja (2002)](papers/2026-04-04/katila-ahuja-2002-search-behavior.pdf) - rows: 2,174, entities: 162, `search_scope = 0.0052`; `p = 0.62`
-- [Katila and Chen (2008)](papers/2026-04-04/katila-chen-2008-search-timing.pdf) - rows: 4,839, entities: 167, `ahead vs sync on event quality = -0.0854`; `p = 0.12`
-- [Rosenkopf (2001)](papers/2026-04-04/rosenkopf-2001-beyond-local-search.pdf) - rows: 23,844, entities: 184, `boundary_existing_field vs local = -0.0389`; `p = 0.39`
+- [Moser, Ohmstedt, and Rhode (2018)](papers/2026-04-05/moser-ohmstedt-rhode-2018-patent-citations.pdf) - rows: 712,375, entities: 345, `Patent quality = 0.0963`; `p = < .001`
+- [Ahuja and Lampert (2001)](papers/2026-04-05/ahuja-lampert-2001-breakthrough-inventions.pdf) - rows: 23,901, entities: 184, `Novel technologies = 0.0589`; `p = 0.82`
+- [Kneeland, Schilling, and Aharonson (2020)](papers/2026-04-05/kneeland-schilling-aharonson-2020-outlier-innovation.pdf) - rows: 23,901, entities: 184, `Distant recombination = 0.0203`; `p = 0.020`
+- [Ahuja (2000)](papers/2026-04-05/ahuja-2000-collaboration-networks.pdf) - rows: 2,378, entities: 177, `Direct ties = -0.0125`; `p = < .001`
+- [Bhaskarabhatla and Hegde (2014)](papers/2026-04-05/bhaskarabhatla-hegde-2014-patenting-open-innovation.pdf) - rows: 1,958, entities: 189, `Post-1989 electronics shift in patenting = 0.4569`; `p = 0.001`
 
 ## Local refresh tools
 

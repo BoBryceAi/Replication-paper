@@ -6,17 +6,99 @@
                  "pagesUrl":  "https://bobryceai.github.io/Replication-paper/"
              },
     "summary":  {
-                    "totalPapers":  5,
-                    "totalBatches":  1,
-                    "totalRows":  525242,
-                    "significantHeadlines":  1,
-                    "totalPdfBytes":  2428321,
-                    "generatedAtUtc":  "2026-04-05T08:04:54Z",
-                    "generatedAtLabel":  "April 5, 2026 at 08:04 UTC",
-                    "latestBatchDate":  "2026-04-04",
-                    "latestBatchLabel":  "April 4, 2026"
+                    "totalPapers":  10,
+                    "totalBatches":  2,
+                    "totalRows":  1289755,
+                    "significantHeadlines":  5,
+                    "totalPdfBytes":  4880580,
+                    "generatedAtUtc":  "2026-04-05T09:44:57Z",
+                    "generatedAtLabel":  "April 5, 2026 at 09:44 UTC",
+                    "latestBatchDate":  "2026-04-05",
+                    "latestBatchLabel":  "April 5, 2026"
                 },
     "batches":  [
+                    {
+                        "date":  "2026-04-05",
+                        "dateLabel":  "April 5, 2026",
+                        "paperCount":  5,
+                        "totalRows":  764513,
+                        "totalEntitiesReported":  1079,
+                        "totalPdfBytes":  2452259,
+                        "totalPdfBytesMb":  2.34,
+                        "significantCount":  4,
+                        "papers":  [
+                                       {
+                                           "slug":  "moser-ohmstedt-rhode-2018-patent-citations",
+                                           "title":  "Moser, Ohmstedt, and Rhode (2018)",
+                                           "date":  "2026-04-05",
+                                           "pdfName":  "moser-ohmstedt-rhode-2018-patent-citations.pdf",
+                                           "pdfUrl":  "papers/2026-04-05/moser-ohmstedt-rhode-2018-patent-citations.pdf",
+                                           "rows":  712375,
+                                           "entities":  345,
+                                           "headlineTerm":  "Patent quality",
+                                           "headlineEstimate":  0.0963013862739361,
+                                           "headlineP":  1.46949454675899E-08,
+                                           "pdfSizeBytes":  474498,
+                                           "pdfSizeLabel":  "463 KB"
+                                       },
+                                       {
+                                           "slug":  "ahuja-lampert-2001-breakthrough-inventions",
+                                           "title":  "Ahuja and Lampert (2001)",
+                                           "date":  "2026-04-05",
+                                           "pdfName":  "ahuja-lampert-2001-breakthrough-inventions.pdf",
+                                           "pdfUrl":  "papers/2026-04-05/ahuja-lampert-2001-breakthrough-inventions.pdf",
+                                           "rows":  23901,
+                                           "entities":  184,
+                                           "headlineTerm":  "Novel technologies",
+                                           "headlineEstimate":  0.0589435913608043,
+                                           "headlineP":  0.819636756100511,
+                                           "pdfSizeBytes":  498452,
+                                           "pdfSizeLabel":  "487 KB"
+                                       },
+                                       {
+                                           "slug":  "kneeland-schilling-aharonson-2020-outlier-innovation",
+                                           "title":  "Kneeland, Schilling, and Aharonson (2020)",
+                                           "date":  "2026-04-05",
+                                           "pdfName":  "kneeland-schilling-aharonson-2020-outlier-innovation.pdf",
+                                           "pdfUrl":  "papers/2026-04-05/kneeland-schilling-aharonson-2020-outlier-innovation.pdf",
+                                           "rows":  23901,
+                                           "entities":  184,
+                                           "headlineTerm":  "Distant recombination",
+                                           "headlineEstimate":  0.0202917616282998,
+                                           "headlineP":  0.0196542183047882,
+                                           "pdfSizeBytes":  496854,
+                                           "pdfSizeLabel":  "485 KB"
+                                       },
+                                       {
+                                           "slug":  "ahuja-2000-collaboration-networks",
+                                           "title":  "Ahuja (2000)",
+                                           "date":  "2026-04-05",
+                                           "pdfName":  "ahuja-2000-collaboration-networks.pdf",
+                                           "pdfUrl":  "papers/2026-04-05/ahuja-2000-collaboration-networks.pdf",
+                                           "rows":  2378,
+                                           "entities":  177,
+                                           "headlineTerm":  "Direct ties",
+                                           "headlineEstimate":  -0.0124849211494456,
+                                           "headlineP":  0.000180041837790886,
+                                           "pdfSizeBytes":  484185,
+                                           "pdfSizeLabel":  "473 KB"
+                                       },
+                                       {
+                                           "slug":  "bhaskarabhatla-hegde-2014-patenting-open-innovation",
+                                           "title":  "Bhaskarabhatla and Hegde (2014)",
+                                           "date":  "2026-04-05",
+                                           "pdfName":  "bhaskarabhatla-hegde-2014-patenting-open-innovation.pdf",
+                                           "pdfUrl":  "papers/2026-04-05/bhaskarabhatla-hegde-2014-patenting-open-innovation.pdf",
+                                           "rows":  1958,
+                                           "entities":  189,
+                                           "headlineTerm":  "Post-1989 electronics shift in patenting",
+                                           "headlineEstimate":  0.456890391972318,
+                                           "headlineP":  0.00110732382081617,
+                                           "pdfSizeBytes":  498270,
+                                           "pdfSizeLabel":  "487 KB"
+                                       }
+                                   ]
+                    },
                     {
                         "date":  "2026-04-04",
                         "dateLabel":  "April 4, 2026",
