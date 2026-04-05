@@ -6,112 +6,142 @@
   <title>Can AI Do Strategy Replication?</title>
   <meta
     name="description"
-    content="A live GitHub Pages archive of AI-assisted, data-backed strategy replication papers built from executable local datasets and published as full journal-style PDFs."
+    content="A public research site for AI-assisted, data-backed replication papers in strategy and innovation, published as full journal-style PDFs from executable local datasets."
   >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap"
     rel="stylesheet"
   >
-  <link rel="stylesheet" href="assets/styles/site.css">
-  <script defer src="assets/scripts/site.js"></script>
+  <link rel="stylesheet" href="assets/styles/site-ape.css">
+  <script defer src="assets/scripts/site-ape.js"></script>
 </head>
 <body>
-  <div class="page-chroma" aria-hidden="true"></div>
+  <div class="site-noise" aria-hidden="true"></div>
+
+  <div class="update-bar">
+    <div class="update-shell">
+      <p id="update-banner-copy">Loading live archive status...</p>
+      <div class="update-links">
+        <a href="#latest">Latest batch</a>
+        <a href="#leaderboard">Leaderboard</a>
+        <a href="https://github.com/BoBryceAi/Replication-paper" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+  </div>
+
   <header class="site-header">
     <nav class="site-nav">
-      <a class="brand" href="#top">Can AI Do Strategy Replication?</a>
+      <a class="brand" href="#top">
+        <span class="brand-mark">CAISR</span>
+        <span class="brand-copy">Can AI Do Strategy Replication?</span>
+      </a>
       <div class="nav-links">
-        <a href="#latest">Latest batch</a>
-        <a href="#library">Paper library</a>
-        <a href="#workflow">Workflow</a>
-        <a href="https://github.com/BoBryceAi/Replication-paper" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="#about">About</a>
+        <a href="#latest">Latest</a>
+        <a href="#method">Method</a>
+        <a href="#leaderboard">Leaderboard</a>
+        <a href="#archive">Archive</a>
       </div>
     </nav>
   </header>
 
   <main id="top">
-    <section class="hero">
+    <section class="hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow">Live public experiment</p>
-        <h1>Can AI do strategy replication?</h1>
-        <p class="hero-text">
-          This website is the public front end for a running replication program in strategy and innovation
-          research. Each paper is read first, mapped to the required empirical objects, recalculated from the
-          current local dataset stack, written as a formal manuscript, and then pushed here as a full PDF.
+        <p class="eyebrow">Live public research platform</p>
+        <h1>
+          <span>Can AI do</span>
+          <span>strategy replication</span>
+          <span>at paper quality?</span>
+        </h1>
+        <p class="hero-lead">
+          This site treats replication as a public research program rather than a PDF archive. Each study is read
+          first, translated into explicit empirical decision points, rebuilt from the current executable dataset
+          stack, written up as a formal paper, and then published here as a traceable output.
         </p>
         <div class="hero-actions">
           <a class="button button-primary" href="#latest">Read the latest batch</a>
-          <a class="button button-secondary" href="https://github.com/BoBryceAi/Replication-paper" target="_blank" rel="noreferrer">Open the repo</a>
+          <a class="button button-secondary" href="https://github.com/BoBryceAi/Replication-paper" target="_blank" rel="noreferrer">Open the GitHub repo</a>
         </div>
-        <div class="hero-metrics">
-          <article class="metric-card">
-            <span class="metric-label">Papers live</span>
-            <strong id="metric-papers">0</strong>
-          </article>
-          <article class="metric-card">
-            <span class="metric-label">Batches</span>
-            <strong id="metric-batches">0</strong>
-          </article>
-          <article class="metric-card">
-            <span class="metric-label">Rows analyzed</span>
-            <strong id="metric-rows">0</strong>
-          </article>
-          <article class="metric-card">
-            <span class="metric-label">Significant headlines</span>
-            <strong id="metric-significant">0</strong>
-          </article>
+        <div class="hero-note">
+          <span class="hero-note-label">Working rule</span>
+          <p>Paper first. Data objects second. Estimation and writing only after the evidence chain is explicit.</p>
         </div>
       </div>
 
-      <aside class="hero-panel">
-        <div class="hero-panel-card spotlight">
-          <p class="panel-kicker">Project standard</p>
-          <h2>Paper first. Data second. Writing last.</h2>
-          <p>
-            The workflow is deliberately strict: identify the original paper's logic, map the exact local data
-            objects that can support replication, compute from the executable dataset stack, and publish a paper
-            rather than a memo.
-          </p>
-        </div>
-        <div class="hero-panel-grid">
-          <article class="hero-panel-card">
-            <p class="panel-kicker">Step 1</p>
-            <h3>Read the source study</h3>
-            <p>Theory, estimand, sample logic, and every major decision point are extracted before any coding starts.</p>
-          </article>
-          <article class="hero-panel-card">
-            <p class="panel-kicker">Step 2</p>
-            <h3>Map local evidence</h3>
-            <p>Only current executable local datasets are used, with each required empirical object tied to a real file.</p>
-          </article>
-          <article class="hero-panel-card">
-            <p class="panel-kicker">Step 3</p>
-            <h3>Write the full paper</h3>
-            <p>The final output is a journal-style manuscript with results, derivations, decisions, and references.</p>
-          </article>
-        </div>
+      <aside class="hero-side">
+        <article class="hero-panel hero-panel-primary">
+          <p class="panel-kicker">Latest batch snapshot</p>
+          <h2 id="hero-latest-title">Loading current batch...</h2>
+          <p id="hero-latest-copy">Pulling live site data from the public library feed.</p>
+          <div id="hero-latest-pills" class="pill-row"></div>
+        </article>
+        <article class="hero-panel">
+          <div class="panel-heading">
+            <p class="panel-kicker">Top papers now</p>
+            <span class="panel-tag">By sample size</span>
+          </div>
+          <div id="hero-top-papers" class="compact-paper-list">
+            <article class="compact-paper skeleton-line"></article>
+            <article class="compact-paper skeleton-line"></article>
+            <article class="compact-paper skeleton-line"></article>
+          </div>
+        </article>
       </aside>
     </section>
 
-    <section class="standards-section">
-      <div class="section-head">
-        <p class="eyebrow">Why this site exists</p>
-        <h2>A living archive, not a PDF dump</h2>
+    <section class="stat-ribbon" id="about">
+      <article class="stat-chip">
+        <span class="stat-label">Published papers</span>
+        <strong id="metric-papers">0</strong>
+      </article>
+      <article class="stat-chip">
+        <span class="stat-label">Published batches</span>
+        <strong id="metric-batches">0</strong>
+      </article>
+      <article class="stat-chip">
+        <span class="stat-label">Analyzed rows</span>
+        <strong id="metric-rows">0</strong>
+      </article>
+      <article class="stat-chip">
+        <span class="stat-label">Headline signals</span>
+        <strong id="metric-significant">0</strong>
+      </article>
+      <article class="stat-chip">
+        <span class="stat-label">Latest batch</span>
+        <strong id="metric-latest">--</strong>
+      </article>
+    </section>
+
+    <section class="editorial-section">
+      <div class="editorial-copy">
+        <p class="eyebrow">What this platform is</p>
+        <h2>A lab-style front end for rigorous, calculated replication.</h2>
+        <p>
+          The archive focuses on strategy and innovation papers that can be reconstructed from the processed local
+          data already available in the workspace. That constraint matters. It keeps the site tied to real
+          executable objects rather than optimistic claims about pipelines that have not yet been rebuilt.
+        </p>
+        <p>
+          The public output is intentionally paper-shaped. Instead of publishing short notes, the workflow expands
+          each successful reconstruction into a journal-style manuscript with theory, data lineage, empirical
+          strategy, results, comparison to the original study, and a documented record of local design choices.
+        </p>
       </div>
-      <div class="standards-grid">
-        <article class="standard-card">
-          <h3>Traceable data lineage</h3>
-          <p>Every public paper on the site is tied back to a current local dataset stack rather than an invented pipeline.</p>
+      <div class="editorial-cards">
+        <article class="signal-card signal-warning">
+          <span class="signal-label">Important caveat</span>
+          <p>These are replication papers from the current local dataset stack, not claims that the full original raw-data pipelines have been reproduced line-for-line.</p>
         </article>
-        <article class="standard-card">
-          <h3>Formal paper output</h3>
-          <p>The public artifact is a manuscript with theory, data, empirical strategy, results, and comparison to the original study.</p>
+        <article class="signal-card">
+          <span class="signal-label">Eligibility rule</span>
+          <p>Only papers that can be calculated from current executable local datasets are supposed to appear in the daily batch.</p>
         </article>
-        <article class="standard-card">
-          <h3>GitHub-native publishing</h3>
-          <p>New batches refresh the website, the library data feed, and the paper archive inside the same GitHub Pages repository.</p>
+        <article class="signal-card">
+          <span class="signal-label">Publication rule</span>
+          <p>Every paper must compile, exceed the project’s citation floor, and compare its local estimates to the published paper before it goes live.</p>
         </article>
       </div>
     </section>
@@ -120,58 +150,143 @@
       <div class="section-head">
         <p class="eyebrow">Latest release</p>
         <h2 id="latest-batch-title">Loading latest batch...</h2>
-        <p id="latest-batch-copy" class="section-copy">Pulling the newest calculated replication set from the site data feed.</p>
+        <p id="latest-batch-copy" class="section-copy">Reading the most recent replication release from the site data feed.</p>
       </div>
-      <div id="latest-batch-grid" class="paper-grid">
-        <article class="paper-card skeleton"></article>
-        <article class="paper-card skeleton"></article>
-        <article class="paper-card skeleton"></article>
-      </div>
-    </section>
-
-    <section class="library-section" id="library">
-      <div class="library-toolbar">
-        <div>
-          <p class="eyebrow">Paper library</p>
-          <h2>Browse every published replication PDF</h2>
+      <div class="latest-layout">
+        <article id="latest-feature-panel" class="feature-card">
+          <div class="feature-skeleton"></div>
+        </article>
+        <div id="latest-batch-grid" class="paper-grid">
+          <article class="paper-card skeleton-card"></article>
+          <article class="paper-card skeleton-card"></article>
+          <article class="paper-card skeleton-card"></article>
         </div>
-        <label class="search-shell" for="library-search">
-          <span>Search</span>
-          <input id="library-search" type="search" placeholder="Search by paper, year, term, or batch date">
-        </label>
-      </div>
-      <p id="search-summary" class="search-summary">Loading library...</p>
-      <div id="archive-batches" class="archive-list">
-        <article class="batch-shell skeleton"></article>
       </div>
     </section>
 
-    <section class="workflow-section" id="workflow">
+    <section class="analysis-section">
       <div class="section-head">
-        <p class="eyebrow">Publishing workflow</p>
-        <h2>How a new replication reaches the website</h2>
+        <p class="eyebrow">Archive signals</p>
+        <h2>How the replication archive is evolving</h2>
+        <p class="section-copy">A live snapshot of scale, sample coverage, and where the biggest empirical reconstructions currently sit.</p>
       </div>
-      <div class="workflow-grid">
-        <article class="workflow-card">
-          <span class="workflow-step">01</span>
-          <h3>Source reading and decision mapping</h3>
-          <p>The original paper is read in detail, and the required design decisions, constructs, and estimands are written down first.</p>
+      <div class="analysis-grid">
+        <article class="chart-card">
+          <div class="chart-head">
+            <p class="panel-kicker">Batch growth</p>
+            <h3>Rows by published batch</h3>
+          </div>
+          <div id="batch-growth-chart" class="bar-list"></div>
         </article>
-        <article class="workflow-card">
-          <span class="workflow-step">02</span>
-          <h3>Executable local reconstruction</h3>
-          <p>The paper is rebuilt only from processed local datasets that already exist in the workspace, with explicit compromises when exact original objects are unavailable.</p>
+        <article class="chart-card">
+          <div class="chart-head">
+            <p class="panel-kicker">Top replications</p>
+            <h3>Largest empirical reconstructions</h3>
+          </div>
+          <div id="sample-size-chart" class="bar-list"></div>
         </article>
-        <article class="workflow-card">
-          <span class="workflow-step">03</span>
-          <h3>Long-form manuscript build</h3>
-          <p>The evidence is expanded into a 30 to 40 page journal-style replication paper with detailed analysis, derivations, and comparisons.</p>
+        <article class="chart-card chart-card-wide">
+          <div class="chart-head">
+            <p class="panel-kicker">What the site is ranking</p>
+            <h3>Core metrics used in the public leaderboard</h3>
+          </div>
+          <div class="metric-legend">
+            <article class="legend-card">
+              <span class="legend-title">Rows</span>
+              <p>The number of rows in the local analysis dataset used to estimate the replication paper.</p>
+            </article>
+            <article class="legend-card">
+              <span class="legend-title">Entities</span>
+              <p>The count of reported firms, assignees, or comparable analytical entities represented in the sample.</p>
+            </article>
+            <article class="legend-card">
+              <span class="legend-title">Headline estimate</span>
+              <p>The featured coefficient or contrast highlighted for the batch summary and public landing page.</p>
+            </article>
+            <article class="legend-card">
+              <span class="legend-title">Signal</span>
+              <p>The site currently treats a headline p-value below .05 as a simple indicator of a statistically visible result.</p>
+            </article>
+          </div>
         </article>
-        <article class="workflow-card">
-          <span class="workflow-step">04</span>
-          <h3>GitHub Pages refresh</h3>
-          <p>The PDF archive, JSON library feed, README, and public homepage are regenerated together so the website always reflects the published repository state.</p>
-        </article>
+      </div>
+    </section>
+
+    <section class="method-section" id="method">
+      <div class="section-head">
+        <p class="eyebrow">Method and caveats</p>
+        <h2>What each public replication paper is expected to do</h2>
+      </div>
+      <div class="accordion-grid">
+        <details class="method-card" open>
+          <summary>Read the original paper before any estimation</summary>
+          <p>The workflow starts by extracting the source paper’s theory, sample logic, estimand, measurement choices, tables, notes, and major design decisions.</p>
+        </details>
+        <details class="method-card">
+          <summary>Map the required empirical objects to exact local datasets</summary>
+          <p>Each paper has to identify what data objects it needs and which processed local files can serve as real analogues before any manuscript claims are written.</p>
+        </details>
+        <details class="method-card">
+          <summary>Calculate from the current executable stack only</summary>
+          <p>The site is supposed to avoid protocol-only outputs. If the local evidence supports only an analogue rather than a perfect duplicate, the paper should say so directly.</p>
+        </details>
+        <details class="method-card">
+          <summary>Write a formal paper, not a checklist memo</summary>
+          <p>The public artifact is a long-form paper with theory, data and measures, empirical strategy, detailed results, a comparison to the original study, and appendices for audit material.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="leaderboard-section" id="leaderboard">
+      <div class="leaderboard-header">
+        <div>
+          <p class="eyebrow">Public leaderboard</p>
+          <h2>Browse the live replication paper archive</h2>
+        </div>
+        <div class="leaderboard-controls">
+          <label class="search-shell" for="library-search">
+            <span>Search</span>
+            <input id="library-search" type="search" placeholder="Search by paper, year, term, or batch date">
+          </label>
+          <div class="sort-shell" id="leaderboard-sort">
+            <button type="button" class="sort-button is-active" data-sort="newest">Newest</button>
+            <button type="button" class="sort-button" data-sort="rows">Largest samples</button>
+            <button type="button" class="sort-button" data-sort="signal">Strongest signal</button>
+          </div>
+        </div>
+      </div>
+      <p id="leaderboard-summary" class="section-copy">Loading public leaderboard...</p>
+      <div class="table-shell">
+        <table class="leaderboard-table">
+          <thead>
+            <tr>
+              <th scope="col">Rank</th>
+              <th scope="col">Paper</th>
+              <th scope="col">Batch</th>
+              <th scope="col">Rows</th>
+              <th scope="col">Entities</th>
+              <th scope="col">Headline estimate</th>
+              <th scope="col">P-value</th>
+              <th scope="col">PDF</th>
+            </tr>
+          </thead>
+          <tbody id="leaderboard-body">
+            <tr>
+              <td colspan="8" class="empty-cell">Loading leaderboard...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="archive-section" id="archive">
+      <div class="section-head">
+        <p class="eyebrow">Batch archive</p>
+        <h2>Every published batch grouped by release date</h2>
+        <p class="section-copy">The homepage highlights the most recent work, while the archive keeps the batch-level context intact.</p>
+      </div>
+      <div id="archive-batches" class="archive-list">
+        <article class="batch-shell skeleton-card"></article>
       </div>
     </section>
   </main>
@@ -179,11 +294,11 @@
   <footer class="site-footer">
     <div>
       <p class="footer-title">Can AI Do Strategy Replication?</p>
-      <p id="footer-updated">Live archive loading...</p>
+      <p id="footer-updated">Loading public site metadata...</p>
     </div>
     <div class="footer-links">
       <a href="https://github.com/BoBryceAi/Replication-paper" target="_blank" rel="noreferrer">GitHub repository</a>
-      <a href="assets/data/library.json" target="_blank" rel="noreferrer">Site data feed</a>
+      <a href="assets/data/library.json" target="_blank" rel="noreferrer">Open data feed</a>
     </div>
   </footer>
 </body>
