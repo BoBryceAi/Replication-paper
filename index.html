@@ -3,53 +3,188 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Replication Papers</title>
-  <style>
-    :root { --bg: #f4f1ea; --ink: #1f2a35; --accent: #1f6feb; --card: #fffdf8; --line: #d8cfbf; }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: Georgia, "Times New Roman", serif; background: radial-gradient(circle at top left, rgba(31,111,235,0.08), transparent 28%), linear-gradient(180deg, #f8f5ee 0%, var(--bg) 100%); color: var(--ink); }
-    main { max-width: 960px; margin: 0 auto; padding: 48px 20px 64px; }
-    h1 { margin: 0 0 12px; font-size: clamp(2rem, 4vw, 3.3rem); line-height: 1.05; }
-    p.lead { max-width: 760px; font-size: 1.08rem; line-height: 1.7; margin: 0 0 28px; }
-    .batch { margin-top: 28px; padding: 24px; background: var(--card); border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 12px 30px rgba(31, 42, 53, 0.06); }
-    ul { list-style: none; padding: 0; margin: 20px 0 0; display: grid; gap: 14px; }
-    li { padding: 16px 18px; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,0.72); }
-    a { color: var(--accent); text-decoration: none; font-weight: 700; }
-    a:hover { text-decoration: underline; }
-    .meta { display: block; margin-top: 6px; font-size: 0.95rem; color: #5a6672; font-weight: 400; }
-    .note { margin-top: 20px; color: #5a6672; font-size: 0.95rem; }
-  </style>
+  <title>Can AI Do Strategy Replication?</title>
+  <meta
+    name="description"
+    content="A live GitHub Pages archive of AI-assisted, data-backed strategy replication papers built from executable local datasets and published as full journal-style PDFs."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="assets/styles/site.css">
+  <script defer src="assets/scripts/site.js"></script>
 </head>
 <body>
-  <main>
-    <h1>Replication Paper Library</h1>
-    <p class="lead">This site publishes local data-backed patent-literature replications generated from the workspace. The 2026-04-04 batch contains five executable journal-style papers backed by local result CSVs and compiled PDFs.</p>
-    <section class="batch">
-      <h2>Batch: 2026-04-04</h2>
-      <ul>
-        <li>
-          <a href="papers/2026-04-04/arts-cassiman-hou-2023-technology-space.pdf">Arts, Cassiman, and Hou (2023)</a>
-          <span class="meta">rows: 5,192; entities: 443; tech_diff = -0.1935; p = 0.7841</span>
-        </li>
-        <li>
-          <a href="papers/2026-04-04/ghosh-2014-data-backed-reproduction.pdf">Ghosh, Martin, Pennings, and Wezel (2014)</a>
-          <span class="meta">rows: 489,193; entities: 200; breadth x org_recomb_exp_log = -0.0022; p = 0.0076</span>
-        </li>
-        <li>
-          <a href="papers/2026-04-04/katila-ahuja-2002-search-behavior.pdf">Katila and Ahuja (2002)</a>
-          <span class="meta">rows: 2,174; entities: 162; search_depth = -0.2243; search_depth^2 = 0.1059</span>
-        </li>
-        <li>
-          <a href="papers/2026-04-04/katila-chen-2008-search-timing.pdf">Katila and Chen (2008)</a>
-          <span class="meta">rows: 4,839; entities: 167; ahead vs sync on event quality = -0.0854; p = 0.1178</span>
-        </li>
-        <li>
-          <a href="papers/2026-04-04/rosenkopf-2001-beyond-local-search.pdf">Rosenkopf (2001)</a>
-          <span class="meta">rows: 23,844; entities: 184; boundary_existing_field = -0.0389; boundary_new_field = 0.1126</span>
-        </li>
-      </ul>
-      <p class="note">Source repository: <a href="https://github.com/BoBryceAi/Replication-paper">BoBryceAi/Replication-paper</a>. These PDFs were produced through the calculated-replication workflow and expanded with the installed journal-writing skill into long-form upload-ready manuscripts.</p>
+  <div class="page-chroma" aria-hidden="true"></div>
+  <header class="site-header">
+    <nav class="site-nav">
+      <a class="brand" href="#top">Can AI Do Strategy Replication?</a>
+      <div class="nav-links">
+        <a href="#latest">Latest batch</a>
+        <a href="#library">Paper library</a>
+        <a href="#workflow">Workflow</a>
+        <a href="https://github.com/BoBryceAi/Replication-paper" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Live public experiment</p>
+        <h1>Can AI do strategy replication?</h1>
+        <p class="hero-text">
+          This website is the public front end for a running replication program in strategy and innovation
+          research. Each paper is read first, mapped to the required empirical objects, recalculated from the
+          current local dataset stack, written as a formal manuscript, and then pushed here as a full PDF.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#latest">Read the latest batch</a>
+          <a class="button button-secondary" href="https://github.com/BoBryceAi/Replication-paper" target="_blank" rel="noreferrer">Open the repo</a>
+        </div>
+        <div class="hero-metrics">
+          <article class="metric-card">
+            <span class="metric-label">Papers live</span>
+            <strong id="metric-papers">0</strong>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Batches</span>
+            <strong id="metric-batches">0</strong>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Rows analyzed</span>
+            <strong id="metric-rows">0</strong>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Significant headlines</span>
+            <strong id="metric-significant">0</strong>
+          </article>
+        </div>
+      </div>
+
+      <aside class="hero-panel">
+        <div class="hero-panel-card spotlight">
+          <p class="panel-kicker">Project standard</p>
+          <h2>Paper first. Data second. Writing last.</h2>
+          <p>
+            The workflow is deliberately strict: identify the original paper's logic, map the exact local data
+            objects that can support replication, compute from the executable dataset stack, and publish a paper
+            rather than a memo.
+          </p>
+        </div>
+        <div class="hero-panel-grid">
+          <article class="hero-panel-card">
+            <p class="panel-kicker">Step 1</p>
+            <h3>Read the source study</h3>
+            <p>Theory, estimand, sample logic, and every major decision point are extracted before any coding starts.</p>
+          </article>
+          <article class="hero-panel-card">
+            <p class="panel-kicker">Step 2</p>
+            <h3>Map local evidence</h3>
+            <p>Only current executable local datasets are used, with each required empirical object tied to a real file.</p>
+          </article>
+          <article class="hero-panel-card">
+            <p class="panel-kicker">Step 3</p>
+            <h3>Write the full paper</h3>
+            <p>The final output is a journal-style manuscript with results, derivations, decisions, and references.</p>
+          </article>
+        </div>
+      </aside>
+    </section>
+
+    <section class="standards-section">
+      <div class="section-head">
+        <p class="eyebrow">Why this site exists</p>
+        <h2>A living archive, not a PDF dump</h2>
+      </div>
+      <div class="standards-grid">
+        <article class="standard-card">
+          <h3>Traceable data lineage</h3>
+          <p>Every public paper on the site is tied back to a current local dataset stack rather than an invented pipeline.</p>
+        </article>
+        <article class="standard-card">
+          <h3>Formal paper output</h3>
+          <p>The public artifact is a manuscript with theory, data, empirical strategy, results, and comparison to the original study.</p>
+        </article>
+        <article class="standard-card">
+          <h3>GitHub-native publishing</h3>
+          <p>New batches refresh the website, the library data feed, and the paper archive inside the same GitHub Pages repository.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="latest-section" id="latest">
+      <div class="section-head">
+        <p class="eyebrow">Latest release</p>
+        <h2 id="latest-batch-title">Loading latest batch...</h2>
+        <p id="latest-batch-copy" class="section-copy">Pulling the newest calculated replication set from the site data feed.</p>
+      </div>
+      <div id="latest-batch-grid" class="paper-grid">
+        <article class="paper-card skeleton"></article>
+        <article class="paper-card skeleton"></article>
+        <article class="paper-card skeleton"></article>
+      </div>
+    </section>
+
+    <section class="library-section" id="library">
+      <div class="library-toolbar">
+        <div>
+          <p class="eyebrow">Paper library</p>
+          <h2>Browse every published replication PDF</h2>
+        </div>
+        <label class="search-shell" for="library-search">
+          <span>Search</span>
+          <input id="library-search" type="search" placeholder="Search by paper, year, term, or batch date">
+        </label>
+      </div>
+      <p id="search-summary" class="search-summary">Loading library...</p>
+      <div id="archive-batches" class="archive-list">
+        <article class="batch-shell skeleton"></article>
+      </div>
+    </section>
+
+    <section class="workflow-section" id="workflow">
+      <div class="section-head">
+        <p class="eyebrow">Publishing workflow</p>
+        <h2>How a new replication reaches the website</h2>
+      </div>
+      <div class="workflow-grid">
+        <article class="workflow-card">
+          <span class="workflow-step">01</span>
+          <h3>Source reading and decision mapping</h3>
+          <p>The original paper is read in detail, and the required design decisions, constructs, and estimands are written down first.</p>
+        </article>
+        <article class="workflow-card">
+          <span class="workflow-step">02</span>
+          <h3>Executable local reconstruction</h3>
+          <p>The paper is rebuilt only from processed local datasets that already exist in the workspace, with explicit compromises when exact original objects are unavailable.</p>
+        </article>
+        <article class="workflow-card">
+          <span class="workflow-step">03</span>
+          <h3>Long-form manuscript build</h3>
+          <p>The evidence is expanded into a 30 to 40 page journal-style replication paper with detailed analysis, derivations, and comparisons.</p>
+        </article>
+        <article class="workflow-card">
+          <span class="workflow-step">04</span>
+          <h3>GitHub Pages refresh</h3>
+          <p>The PDF archive, JSON library feed, README, and public homepage are regenerated together so the website always reflects the published repository state.</p>
+        </article>
+      </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div>
+      <p class="footer-title">Can AI Do Strategy Replication?</p>
+      <p id="footer-updated">Live archive loading...</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/BoBryceAi/Replication-paper" target="_blank" rel="noreferrer">GitHub repository</a>
+      <a href="assets/data/library.json" target="_blank" rel="noreferrer">Site data feed</a>
+    </div>
+  </footer>
 </body>
 </html>

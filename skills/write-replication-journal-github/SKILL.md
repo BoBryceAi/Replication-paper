@@ -98,7 +98,8 @@ Before publishing, verify all of the following:
 
 - Build manuscripts from the research workspace.
 - Compile with `scripts/build_daily_replication_pdfs.ps1`.
-- Copy compiled PDFs into `publish/Replication-paper/papers/YYYY-MM-DD/`.
+- Refresh the public archive with `publish/Replication-paper/tools/publish-batch.ps1 -Date YYYY-MM-DD` so the PDFs, README, and site data feed stay in sync.
+- Let `publish/Replication-paper/tools/update-site.ps1` regenerate the GitHub Pages metadata after any archive change.
 - Update repository-facing documentation when the workflow standard changes.
 - Inspect `git status` before commit.
 - Commit only the intended publish artifacts.
@@ -120,3 +121,4 @@ If the user says to "remember the process," assume the following standard:
 - comparison to original results
 - paper-style prose, not messy workflow notes
 - validated PDF published to GitHub
+- website homepage and library feed refreshed with the new batch
