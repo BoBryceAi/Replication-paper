@@ -6,99 +6,17 @@
                  "pagesUrl":  "https://bobryceai.github.io/Replication-paper/"
              },
     "summary":  {
-                    "totalPapers":  10,
-                    "totalBatches":  2,
-                    "totalRows":  1050484,
-                    "significantHeadlines":  2,
-                    "totalPdfBytes":  4858193,
-                    "generatedAtUtc":  "2026-04-05T07:15:09Z",
-                    "generatedAtLabel":  "April 5, 2026 at 07:15 UTC",
-                    "latestBatchDate":  "2026-04-05",
-                    "latestBatchLabel":  "April 5, 2026"
+                    "totalPapers":  5,
+                    "totalBatches":  1,
+                    "totalRows":  525242,
+                    "significantHeadlines":  1,
+                    "totalPdfBytes":  2428321,
+                    "generatedAtUtc":  "2026-04-05T08:04:54Z",
+                    "generatedAtLabel":  "April 5, 2026 at 08:04 UTC",
+                    "latestBatchDate":  "2026-04-04",
+                    "latestBatchLabel":  "April 4, 2026"
                 },
     "batches":  [
-                    {
-                        "date":  "2026-04-05",
-                        "dateLabel":  "April 5, 2026",
-                        "paperCount":  5,
-                        "totalRows":  525242,
-                        "totalEntitiesReported":  1156,
-                        "totalPdfBytes":  2429872,
-                        "totalPdfBytesMb":  2.32,
-                        "significantCount":  1,
-                        "papers":  [
-                                       {
-                                           "slug":  "arts-cassiman-hou-2023-technology-space",
-                                           "title":  "Arts, Cassiman, and Hou (2023)",
-                                           "date":  "2026-04-05",
-                                           "pdfName":  "arts-cassiman-hou-2023-technology-space.pdf",
-                                           "pdfUrl":  "papers/2026-04-05/arts-cassiman-hou-2023-technology-space.pdf",
-                                           "rows":  5192,
-                                           "entities":  443,
-                                           "headlineTerm":  "tech_diff",
-                                           "headlineEstimate":  -0.193452441566626,
-                                           "headlineP":  0.78405833893197,
-                                           "pdfSizeBytes":  476005,
-                                           "pdfSizeLabel":  "465 KB"
-                                       },
-                                       {
-                                           "slug":  "ghosh-martin-pennings-wezel-2014-ambition-focus",
-                                           "title":  "Ghosh, Martin, Pennings, and Wezel (2014)",
-                                           "date":  "2026-04-05",
-                                           "pdfName":  "ghosh-martin-pennings-wezel-2014-ambition-focus.pdf",
-                                           "pdfUrl":  "papers/2026-04-05/ghosh-martin-pennings-wezel-2014-ambition-focus.pdf",
-                                           "rows":  489193,
-                                           "entities":  200,
-                                           "headlineTerm":  "breadth x org_recomb_exp_log",
-                                           "headlineEstimate":  -0.00218787548052927,
-                                           "headlineP":  0.00760381295518021,
-                                           "pdfSizeBytes":  518760,
-                                           "pdfSizeLabel":  "507 KB"
-                                       },
-                                       {
-                                           "slug":  "katila-ahuja-2002-search-behavior",
-                                           "title":  "Katila and Ahuja (2002)",
-                                           "date":  "2026-04-05",
-                                           "pdfName":  "katila-ahuja-2002-search-behavior.pdf",
-                                           "pdfUrl":  "papers/2026-04-05/katila-ahuja-2002-search-behavior.pdf",
-                                           "rows":  2174,
-                                           "entities":  162,
-                                           "headlineTerm":  "search_scope",
-                                           "headlineEstimate":  0.00524062436946449,
-                                           "headlineP":  0.615313101679675,
-                                           "pdfSizeBytes":  473708,
-                                           "pdfSizeLabel":  "463 KB"
-                                       },
-                                       {
-                                           "slug":  "katila-chen-2008-search-timing",
-                                           "title":  "Katila and Chen (2008)",
-                                           "date":  "2026-04-05",
-                                           "pdfName":  "katila-chen-2008-search-timing.pdf",
-                                           "pdfUrl":  "papers/2026-04-05/katila-chen-2008-search-timing.pdf",
-                                           "rows":  4839,
-                                           "entities":  167,
-                                           "headlineTerm":  "ahead vs sync on event quality",
-                                           "headlineEstimate":  -0.0854138746844357,
-                                           "headlineP":  0.117820359053751,
-                                           "pdfSizeBytes":  476212,
-                                           "pdfSizeLabel":  "465 KB"
-                                       },
-                                       {
-                                           "slug":  "rosenkopf-2001-beyond-local-search",
-                                           "title":  "Rosenkopf (2001)",
-                                           "date":  "2026-04-05",
-                                           "pdfName":  "rosenkopf-2001-beyond-local-search.pdf",
-                                           "pdfUrl":  "papers/2026-04-05/rosenkopf-2001-beyond-local-search.pdf",
-                                           "rows":  23844,
-                                           "entities":  184,
-                                           "headlineTerm":  "boundary_existing_field vs local",
-                                           "headlineEstimate":  -0.0388896934338841,
-                                           "headlineP":  0.386760665724718,
-                                           "pdfSizeBytes":  485187,
-                                           "pdfSizeLabel":  "474 KB"
-                                       }
-                                   ]
-                    },
                     {
                         "date":  "2026-04-04",
                         "dateLabel":  "April 4, 2026",
