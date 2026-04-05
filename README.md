@@ -18,3 +18,8 @@ Repository: <https://github.com/BoBryceAi/Replication-paper>
 - Each paper is backed by local result CSVs stored under `patent literature/daily_replications/2026-04-04`.
 - The publish target for this library is the GitHub repository `BoBryceAi/Replication-paper`.
 - The manuscript workflow now uses the installed Codex skill `write-replication-journal-github` to turn calculated replication folders into 30-40 page journal-style PDFs for upload.
+
+## Skill Standard
+
+- The versioned skill definition for this workflow is stored at [skills/write-replication-journal-github/SKILL.md](skills/write-replication-journal-github/SKILL.md).
+- That skill now encodes the paper-first workflow, detailed decision mapping, current-dataset-only rule, 30-plus-reference rule, APA-like author-year citation standard, table and number-formatting rules, and publish validation checklist.
