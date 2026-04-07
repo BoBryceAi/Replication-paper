@@ -6,17 +6,99 @@
                  "pagesUrl":  "https://bobryceai.github.io/Replication-paper/"
              },
     "summary":  {
-                    "totalPapers":  10,
-                    "totalBatches":  2,
-                    "totalRows":  1289755,
-                    "significantHeadlines":  5,
-                    "totalPdfBytes":  4880580,
-                    "generatedAtUtc":  "2026-04-05T09:44:57Z",
-                    "generatedAtLabel":  "April 5, 2026 at 09:44 UTC",
-                    "latestBatchDate":  "2026-04-05",
-                    "latestBatchLabel":  "April 5, 2026"
+                    "totalPapers":  15,
+                    "totalBatches":  3,
+                    "totalRows":  1366347,
+                    "significantHeadlines":  6,
+                    "totalPdfBytes":  7355570,
+                    "generatedAtUtc":  "2026-04-07T13:50:31Z",
+                    "generatedAtLabel":  "April 7, 2026 at 13:50 UTC",
+                    "latestBatchDate":  "2026-04-07",
+                    "latestBatchLabel":  "April 7, 2026"
                 },
     "batches":  [
+                    {
+                        "date":  "2026-04-07",
+                        "dateLabel":  "April 7, 2026",
+                        "paperCount":  5,
+                        "totalRows":  76592,
+                        "totalEntitiesReported":  907,
+                        "totalPdfBytes":  2474990,
+                        "totalPdfBytesMb":  2.36,
+                        "significantCount":  1,
+                        "papers":  [
+                                       {
+                                           "slug":  "roach-cohen-2013-public-research-knowledge-flows",
+                                           "title":  "Roach and Cohen (2013)",
+                                           "date":  "2026-04-07",
+                                           "pdfName":  "roach-cohen-2013-public-research-knowledge-flows.pdf",
+                                           "pdfUrl":  "papers/2026-04-07/roach-cohen-2013-public-research-knowledge-flows.pdf",
+                                           "rows":  2511,
+                                           "entities":  178,
+                                           "headlineTerm":  "External public-research citations",
+                                           "headlineEstimate":  0.0220385648435739,
+                                           "headlineP":  0.589344955260918,
+                                           "pdfSizeBytes":  493472,
+                                           "pdfSizeLabel":  "482 KB"
+                                       },
+                                       {
+                                           "slug":  "rosenkopf-almeida-2003-overcoming-local-search",
+                                           "title":  "Rosenkopf and Almeida (2003)",
+                                           "date":  "2026-04-07",
+                                           "pdfName":  "rosenkopf-almeida-2003-overcoming-local-search.pdf",
+                                           "pdfUrl":  "papers/2026-04-07/rosenkopf-almeida-2003-overcoming-local-search.pdf",
+                                           "rows":  23901,
+                                           "entities":  184,
+                                           "headlineTerm":  "Mobility bridge x technological distance",
+                                           "headlineEstimate":  0.0721976309710042,
+                                           "headlineP":  0.0021898370120675,
+                                           "pdfSizeBytes":  493687,
+                                           "pdfSizeLabel":  "482 KB"
+                                       },
+                                       {
+                                           "slug":  "rothaermel-hess-2007-dynamic-capabilities",
+                                           "title":  "Rothaermel and Hess (2007)",
+                                           "date":  "2026-04-07",
+                                           "pdfName":  "rothaermel-hess-2007-dynamic-capabilities.pdf",
+                                           "pdfUrl":  "papers/2026-04-07/rothaermel-hess-2007-dynamic-capabilities.pdf",
+                                           "rows":  23901,
+                                           "entities":  184,
+                                           "headlineTerm":  "Firm science x network ties",
+                                           "headlineEstimate":  2.24852097638587E-05,
+                                           "headlineP":  0.957419875477289,
+                                           "pdfSizeBytes":  500627,
+                                           "pdfSizeLabel":  "489 KB"
+                                       },
+                                       {
+                                           "slug":  "owen-smith-powell-2004-knowledge-networks",
+                                           "title":  "Owen-Smith and Powell (2004)",
+                                           "date":  "2026-04-07",
+                                           "pdfName":  "owen-smith-powell-2004-knowledge-networks.pdf",
+                                           "pdfUrl":  "papers/2026-04-07/owen-smith-powell-2004-knowledge-networks.pdf",
+                                           "rows":  2378,
+                                           "entities":  177,
+                                           "headlineTerm":  "Component size x open science",
+                                           "headlineEstimate":  0.000846222009477972,
+                                           "headlineP":  0.184835861717353,
+                                           "pdfSizeBytes":  493206,
+                                           "pdfSizeLabel":  "482 KB"
+                                       },
+                                       {
+                                           "slug":  "wu-hitt-lou-2020-data-analytics-innovation",
+                                           "title":  "Wu, Hitt, and Lou (2020)",
+                                           "date":  "2026-04-07",
+                                           "pdfName":  "wu-hitt-lou-2020-data-analytics-innovation.pdf",
+                                           "pdfUrl":  "papers/2026-04-07/wu-hitt-lou-2020-data-analytics-innovation.pdf",
+                                           "rows":  23901,
+                                           "entities":  184,
+                                           "headlineTerm":  "AI score x breadth of recombination",
+                                           "headlineEstimate":  -0.00239006715673665,
+                                           "headlineP":  0.743227692197849,
+                                           "pdfSizeBytes":  493998,
+                                           "pdfSizeLabel":  "482 KB"
+                                       }
+                                   ]
+                    },
                     {
                         "date":  "2026-04-05",
                         "dateLabel":  "April 5, 2026",

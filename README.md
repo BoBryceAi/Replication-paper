@@ -14,19 +14,19 @@ This repository is the public website and PDF archive for AI-assisted strategy r
 
 ## Current site totals
 
-- published papers: 10
-- published batches: 2
-- analyzed rows across batches: 1,289,755
-- headline estimates with p < .05: 5
-- latest batch: April 5, 2026
+- published papers: 15
+- published batches: 3
+- analyzed rows across batches: 1,366,347
+- headline estimates with p < .05: 6
+- latest batch: April 7, 2026
 
 ## Latest batch
 
-- [Moser, Ohmstedt, and Rhode (2018)](papers/2026-04-05/moser-ohmstedt-rhode-2018-patent-citations.pdf) - rows: 712,375, entities: 345, `Patent quality = 0.0963`; `p = < .001`
-- [Ahuja and Lampert (2001)](papers/2026-04-05/ahuja-lampert-2001-breakthrough-inventions.pdf) - rows: 23,901, entities: 184, `Novel technologies = 0.0589`; `p = 0.82`
-- [Kneeland, Schilling, and Aharonson (2020)](papers/2026-04-05/kneeland-schilling-aharonson-2020-outlier-innovation.pdf) - rows: 23,901, entities: 184, `Distant recombination = 0.0203`; `p = 0.020`
-- [Ahuja (2000)](papers/2026-04-05/ahuja-2000-collaboration-networks.pdf) - rows: 2,378, entities: 177, `Direct ties = -0.0125`; `p = < .001`
-- [Bhaskarabhatla and Hegde (2014)](papers/2026-04-05/bhaskarabhatla-hegde-2014-patenting-open-innovation.pdf) - rows: 1,958, entities: 189, `Post-1989 electronics shift in patenting = 0.4569`; `p = 0.001`
+- [Roach and Cohen (2013)](papers/2026-04-07/roach-cohen-2013-public-research-knowledge-flows.pdf) - rows: 2,511, entities: 178, `External public-research citations = 0.022`; `p = 0.59`
+- [Rosenkopf and Almeida (2003)](papers/2026-04-07/rosenkopf-almeida-2003-overcoming-local-search.pdf) - rows: 23,901, entities: 184, `Mobility bridge x technological distance = 0.0722`; `p = 0.002`
+- [Rothaermel and Hess (2007)](papers/2026-04-07/rothaermel-hess-2007-dynamic-capabilities.pdf) - rows: 23,901, entities: 184, `Firm science x network ties = 0`; `p = 0.96`
+- [Owen-Smith and Powell (2004)](papers/2026-04-07/owen-smith-powell-2004-knowledge-networks.pdf) - rows: 2,378, entities: 177, `Component size x open science = 0.0008`; `p = 0.18`
+- [Wu, Hitt, and Lou (2020)](papers/2026-04-07/wu-hitt-lou-2020-data-analytics-innovation.pdf) - rows: 23,901, entities: 184, `AI score x breadth of recombination = -0.0024`; `p = 0.74`
 
 ## Local refresh tools
 
@@ -36,3 +36,8 @@ This repository is the public website and PDF archive for AI-assisted strategy r
 ## Workflow skill
 
 - The publishing and manuscript standard is documented at [skills/write-replication-journal-github/SKILL.md](skills/write-replication-journal-github/SKILL.md).
+
+## Workflow and skill stack
+
+- Manuscript production follows a paper-first replication process that reads the source paper, maps every major decision point, checks the exact processed local files, and writes the article only after the evidence chain is explicit.
+- The core GitHub skill is write-replication-journal-github, supported by dgm-method-design, dgm-research-positioning, citation-management, literature-review, and peer-review for stronger structure, citation density, and final manuscript polish.

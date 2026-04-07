@@ -336,7 +336,12 @@ $readmeLines += @(
     "",
     "## Workflow skill",
     "",
-    "- The publishing and manuscript standard is documented at [skills/write-replication-journal-github/SKILL.md](skills/write-replication-journal-github/SKILL.md)."
+    "- The publishing and manuscript standard is documented at [skills/write-replication-journal-github/SKILL.md](skills/write-replication-journal-github/SKILL.md).",
+    "",
+    "## Workflow and skill stack",
+    "",
+    "- Manuscript production follows a paper-first replication process that reads the source paper, maps every major decision point, checks the exact processed local files, and writes the article only after the evidence chain is explicit.",
+    "- The core GitHub skill is `write-replication-journal-github`, supported by `dgm-method-design`, `dgm-research-positioning`, `citation-management`, `literature-review`, and `peer-review` for stronger structure, citation density, and final manuscript polish."
 )
 
 Write-TextFile -Path $readmePath -Lines $readmeLines

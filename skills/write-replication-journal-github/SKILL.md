@@ -18,8 +18,13 @@ The paper is not a workflow memo. It must read like a formal journal article whi
 3. Identify which empirical objects are needed to reproduce the paper.
 4. Match those objects to the exact processed local datasets and result files that already exist in the workspace.
 5. Run or verify the local calculations from the current executable dataset stack.
-6. Write the paper only after the source logic and local evidence mapping are both explicit.
-7. Compile, validate, and publish the PDF.
+6. Use the writing stack deliberately:
+   - `dgm-method-design` for source-to-data mapping and explicit decision tracking
+   - `dgm-research-positioning` for the paper's bounded contribution claim
+   - `citation-management` and `literature-review` for reference verification and denser literature support
+   - `peer-review` for an internal prepublication quality pass on structure, evidence, and readability
+7. Write the paper only after the source logic and local evidence mapping are both explicit.
+8. Compile, validate, and publish the PDF.
 
 ## Data Rules
 
@@ -79,6 +84,10 @@ The paper is not a workflow memo. It must read like a formal journal article whi
 - Explain why each major local design choice was necessary.
 - When the local design differs from the source paper, state the difference directly and interpret its implications.
 - Do not pad page length with empty summary tables or repetitive filler.
+- Use the stronger scientific-writing stack when drafting:
+  - literature positioning should be explicit and conservative
+  - citations should be checked rather than assumed
+  - the manuscript should receive an internal peer-review-style pass before publishing
 
 ## Validation Checklist
 
@@ -122,3 +131,4 @@ If the user says to "remember the process," assume the following standard:
 - paper-style prose, not messy workflow notes
 - validated PDF published to GitHub
 - website homepage and library feed refreshed with the new batch
+- GitHub-side skill and README kept aligned with the current workflow standard
