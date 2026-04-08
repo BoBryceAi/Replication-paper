@@ -10,9 +10,9 @@
                     "totalBatches":  3,
                     "totalRows":  1366347,
                     "significantHeadlines":  6,
-                    "totalPdfBytes":  7787054,
-                    "generatedAtUtc":  "2026-04-08T11:25:15Z",
-                    "generatedAtLabel":  "April 8, 2026 at 11:25 UTC",
+                    "totalPdfBytes":  8628843,
+                    "generatedAtUtc":  "2026-04-08T11:52:27Z",
+                    "generatedAtLabel":  "April 8, 2026 at 11:52 UTC",
                     "latestBatchDate":  "2026-04-07",
                     "latestBatchLabel":  "April 7, 2026"
                 },
@@ -105,8 +105,8 @@
                         "paperCount":  5,
                         "totalRows":  764513,
                         "totalEntitiesReported":  1079,
-                        "totalPdfBytes":  2452259,
-                        "totalPdfBytesMb":  2.34,
+                        "totalPdfBytes":  2860459,
+                        "totalPdfBytesMb":  2.73,
                         "significantCount":  4,
                         "papers":  [
                                        {
@@ -120,8 +120,8 @@
                                            "headlineTerm":  "Patent quality",
                                            "headlineEstimate":  0.0963013862739361,
                                            "headlineP":  1.46949454675899E-08,
-                                           "pdfSizeBytes":  474498,
-                                           "pdfSizeLabel":  "463 KB"
+                                           "pdfSizeBytes":  562945,
+                                           "pdfSizeLabel":  "550 KB"
                                        },
                                        {
                                            "slug":  "ahuja-lampert-2001-breakthrough-inventions",
@@ -134,8 +134,8 @@
                                            "headlineTerm":  "Novel technologies",
                                            "headlineEstimate":  0.0589435913608043,
                                            "headlineP":  0.819636756100511,
-                                           "pdfSizeBytes":  498452,
-                                           "pdfSizeLabel":  "487 KB"
+                                           "pdfSizeBytes":  575900,
+                                           "pdfSizeLabel":  "562 KB"
                                        },
                                        {
                                            "slug":  "kneeland-schilling-aharonson-2020-outlier-innovation",
@@ -148,8 +148,8 @@
                                            "headlineTerm":  "Distant recombination",
                                            "headlineEstimate":  0.0202917616282998,
                                            "headlineP":  0.0196542183047882,
-                                           "pdfSizeBytes":  496854,
-                                           "pdfSizeLabel":  "485 KB"
+                                           "pdfSizeBytes":  583060,
+                                           "pdfSizeLabel":  "569 KB"
                                        },
                                        {
                                            "slug":  "ahuja-2000-collaboration-networks",
@@ -162,8 +162,8 @@
                                            "headlineTerm":  "Direct ties",
                                            "headlineEstimate":  -0.0124849211494456,
                                            "headlineP":  0.000180041837790886,
-                                           "pdfSizeBytes":  484185,
-                                           "pdfSizeLabel":  "473 KB"
+                                           "pdfSizeBytes":  566689,
+                                           "pdfSizeLabel":  "553 KB"
                                        },
                                        {
                                            "slug":  "bhaskarabhatla-hegde-2014-patenting-open-innovation",
@@ -176,8 +176,8 @@
                                            "headlineTerm":  "Post-1989 electronics shift in patenting",
                                            "headlineEstimate":  0.456890391972318,
                                            "headlineP":  0.00110732382081617,
-                                           "pdfSizeBytes":  498270,
-                                           "pdfSizeLabel":  "487 KB"
+                                           "pdfSizeBytes":  571865,
+                                           "pdfSizeLabel":  "558 KB"
                                        }
                                    ]
                     },
@@ -187,8 +187,8 @@
                         "paperCount":  5,
                         "totalRows":  525242,
                         "totalEntitiesReported":  1156,
-                        "totalPdfBytes":  2428321,
-                        "totalPdfBytesMb":  2.32,
+                        "totalPdfBytes":  2861910,
+                        "totalPdfBytesMb":  2.73,
                         "significantCount":  1,
                         "papers":  [
                                        {
@@ -202,8 +202,8 @@
                                            "headlineTerm":  "tech_diff",
                                            "headlineEstimate":  -0.193452441566626,
                                            "headlineP":  0.78405833893197,
-                                           "pdfSizeBytes":  475773,
-                                           "pdfSizeLabel":  "465 KB"
+                                           "pdfSizeBytes":  566914,
+                                           "pdfSizeLabel":  "554 KB"
                                        },
                                        {
                                            "slug":  "ghosh-martin-pennings-wezel-2014-ambition-focus",
@@ -216,8 +216,8 @@
                                            "headlineTerm":  "breadth x org_recomb_exp_log",
                                            "headlineEstimate":  -0.00218787548052927,
                                            "headlineP":  0.00760381295518021,
-                                           "pdfSizeBytes":  518528,
-                                           "pdfSizeLabel":  "506 KB"
+                                           "pdfSizeBytes":  611905,
+                                           "pdfSizeLabel":  "598 KB"
                                        },
                                        {
                                            "slug":  "katila-ahuja-2002-search-behavior",
@@ -230,8 +230,8 @@
                                            "headlineTerm":  "search_scope",
                                            "headlineEstimate":  0.00524062436946449,
                                            "headlineP":  0.615313101679675,
-                                           "pdfSizeBytes":  473476,
-                                           "pdfSizeLabel":  "462 KB"
+                                           "pdfSizeBytes":  564321,
+                                           "pdfSizeLabel":  "551 KB"
                                        },
                                        {
                                            "slug":  "katila-chen-2008-search-timing",
@@ -244,8 +244,8 @@
                                            "headlineTerm":  "ahead vs sync on event quality",
                                            "headlineEstimate":  -0.0854138746844357,
                                            "headlineP":  0.117820359053751,
-                                           "pdfSizeBytes":  475979,
-                                           "pdfSizeLabel":  "465 KB"
+                                           "pdfSizeBytes":  553792,
+                                           "pdfSizeLabel":  "541 KB"
                                        },
                                        {
                                            "slug":  "rosenkopf-2001-beyond-local-search",
@@ -258,8 +258,8 @@
                                            "headlineTerm":  "boundary_existing_field vs local",
                                            "headlineEstimate":  -0.0388896934338841,
                                            "headlineP":  0.386760665724718,
-                                           "pdfSizeBytes":  484565,
-                                           "pdfSizeLabel":  "473 KB"
+                                           "pdfSizeBytes":  564978,
+                                           "pdfSizeLabel":  "552 KB"
                                        }
                                    ]
                     }
