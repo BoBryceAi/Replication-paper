@@ -10,9 +10,9 @@
                     "totalBatches":  3,
                     "totalRows":  1366347,
                     "significantHeadlines":  6,
-                    "totalPdfBytes":  7647966,
-                    "generatedAtUtc":  "2026-04-08T10:42:05Z",
-                    "generatedAtLabel":  "April 8, 2026 at 10:42 UTC",
+                    "totalPdfBytes":  7654563,
+                    "generatedAtUtc":  "2026-04-08T10:58:13Z",
+                    "generatedAtLabel":  "April 8, 2026 at 10:58 UTC",
                     "latestBatchDate":  "2026-04-07",
                     "latestBatchLabel":  "April 7, 2026"
                 },
@@ -23,8 +23,8 @@
                         "paperCount":  5,
                         "totalRows":  76592,
                         "totalEntitiesReported":  907,
-                        "totalPdfBytes":  2767386,
-                        "totalPdfBytesMb":  2.64,
+                        "totalPdfBytes":  2773983,
+                        "totalPdfBytesMb":  2.65,
                         "significantCount":  1,
                         "papers":  [
                                        {
@@ -38,8 +38,8 @@
                                            "headlineTerm":  "External public-research citations",
                                            "headlineEstimate":  0.0220385648435739,
                                            "headlineP":  0.589344955260918,
-                                           "pdfSizeBytes":  547747,
-                                           "pdfSizeLabel":  "535 KB"
+                                           "pdfSizeBytes":  548485,
+                                           "pdfSizeLabel":  "536 KB"
                                        },
                                        {
                                            "slug":  "rosenkopf-almeida-2003-overcoming-local-search",
@@ -52,8 +52,8 @@
                                            "headlineTerm":  "Mobility bridge x technological distance",
                                            "headlineEstimate":  0.0721976309710042,
                                            "headlineP":  0.0021898370120675,
-                                           "pdfSizeBytes":  550473,
-                                           "pdfSizeLabel":  "538 KB"
+                                           "pdfSizeBytes":  553453,
+                                           "pdfSizeLabel":  "540 KB"
                                        },
                                        {
                                            "slug":  "rothaermel-hess-2007-dynamic-capabilities",
@@ -66,8 +66,8 @@
                                            "headlineTerm":  "Firm science x network ties",
                                            "headlineEstimate":  2.24852097638587E-05,
                                            "headlineP":  0.957419875477289,
-                                           "pdfSizeBytes":  561742,
-                                           "pdfSizeLabel":  "549 KB"
+                                           "pdfSizeBytes":  563385,
+                                           "pdfSizeLabel":  "550 KB"
                                        },
                                        {
                                            "slug":  "owen-smith-powell-2004-knowledge-networks",
@@ -80,8 +80,8 @@
                                            "headlineTerm":  "Component size x open science",
                                            "headlineEstimate":  0.000846222009477972,
                                            "headlineP":  0.184835861717353,
-                                           "pdfSizeBytes":  553388,
-                                           "pdfSizeLabel":  "540 KB"
+                                           "pdfSizeBytes":  554379,
+                                           "pdfSizeLabel":  "541 KB"
                                        },
                                        {
                                            "slug":  "wu-hitt-lou-2020-data-analytics-innovation",
@@ -94,7 +94,7 @@
                                            "headlineTerm":  "AI score x breadth of recombination",
                                            "headlineEstimate":  -0.00239006715673665,
                                            "headlineP":  0.743227692197849,
-                                           "pdfSizeBytes":  554036,
+                                           "pdfSizeBytes":  554281,
                                            "pdfSizeLabel":  "541 KB"
                                        }
                                    ]
