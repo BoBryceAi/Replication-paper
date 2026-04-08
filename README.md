@@ -40,4 +40,8 @@ This repository is the public website and PDF archive for AI-assisted strategy r
 ## Workflow and skill stack
 
 - Manuscript production follows a paper-first replication process that reads the source paper, maps every major decision point, checks the exact processed local files, and writes the article only after the evidence chain is explicit.
+- Every paper must reconstruct the original article's published methodology before interpreting the local rerun, including the original sample, measurement architecture, estimator, and identifying comparison.
+- Every paper must name the actual processed local dataset families used in the replication body, such as DISCERN-linked firm panels, PatentView-style patent files, rolling citation-link networks, and CRSP or Compustat-linked controls when those are part of the executable stack.
+- Every paper must include a detailed original-versus-replication comparison section covering methodology, data architecture, focal estimated effects, substantive interpretation, and final conclusion rather than only a headline coefficient check.
+- The public archive is refreshed when the workflow standard changes, so older published batches can be rewritten to match the current paper standard rather than freezing earlier weaker templates.
 - The core GitHub skill is write-replication-journal-github, supported by dgm-method-design, dgm-research-positioning, citation-management, literature-review, and peer-review for stronger structure, citation density, and final manuscript polish.

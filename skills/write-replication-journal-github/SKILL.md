@@ -14,7 +14,7 @@ The paper is not a workflow memo. It must read like a formal journal article whi
 ## Required Sequence
 
 1. Read the source paper first.
-2. Identify the source paper's theory, estimand, sample logic, variable definitions, decision points, and reported results.
+2. Reconstruct the source paper's actual methodology before writing the local paper: theory, estimand, sample logic, variable definitions, estimator, identifying comparison, decision points, and reported results.
 3. Identify which empirical objects are needed to reproduce the paper.
 4. Match those objects to the exact processed local datasets and result files that already exist in the workspace.
 5. Run or verify the local calculations from the current executable dataset stack.
@@ -33,6 +33,7 @@ The paper is not a workflow memo. It must read like a formal journal article whi
 - Do not invent variables, coefficients, robustness checks, citations, or measurement steps.
 - Separate direct source facts from local replication decisions.
 - Keep the main text focused on data lineage and empirical meaning rather than dumping file paths.
+- In the paper body, explicitly name the local dataset families used in the replication, for example DISCERN-linked panels, PatentView-style patent files, rolling citation-link networks, CRSP or Compustat-linked controls, or other verified processed sources already present in the workspace.
 
 ## Paper Requirements
 
@@ -51,7 +52,8 @@ The paper is not a workflow memo. It must read like a formal journal article whi
 - The main content before appendices should usually exceed 25 pages.
 - The total manuscript should usually exceed 5,000 words.
 - The body must include detailed writing, detailed derivation logic, detailed decision reasoning, and detailed data analysis based on the current local dataset.
-- Include a formal comparison section showing the original paper's reported results versus the current local dataset results and explaining why they align or differ.
+- The paper's narrative, descriptive emphasis, figure choice, and section flow should follow the logic of the original article rather than forcing every paper into one repeated template.
+- Include a detailed comparison section that sets the original paper and local replication side by side on methodology, measurement architecture, sample definition, estimator, focal effects, substantive interpretation, and final conclusion.
 
 ## Citation Standards
 
@@ -88,6 +90,7 @@ The paper is not a workflow memo. It must read like a formal journal article whi
   - literature positioning should be explicit and conservative
   - citations should be checked rather than assumed
   - the manuscript should receive an internal peer-review-style pass before publishing
+- The original-versus-replication comparison should read as analysis, not bookkeeping: explain what changes in data architecture do to the estimated effects and what that means for the original paper's conclusion.
 
 ## Validation Checklist
 
@@ -102,6 +105,8 @@ Before publishing, verify all of the following:
 7. Table width and formatting are readable in the PDF.
 8. Numeric formatting is type-aware.
 9. The GitHub publish copy matches the latest compiled local PDF.
+10. The paper explicitly names the local dataset families used in the replication body.
+11. The original-versus-replication comparison covers methodology, effects, and conclusion in substantive prose.
 
 ## Publish Workflow
 
@@ -119,15 +124,17 @@ Before publishing, verify all of the following:
 If the user says to "remember the process," assume the following standard:
 
 - source paper first
+- original methodology first
 - exact decision-point mapping
 - exact local data-object mapping
+- exact local dataset-family naming in the paper body
 - current executable dataset only
 - detailed derivations in the paper
 - detailed data analysis in the paper body
 - over 30 references
 - varying topic-specific reference counts across papers
 - APA-like author-year citations
-- comparison to original results
+- detailed comparison to original methodology, results, and conclusion
 - paper-style prose, not messy workflow notes
 - validated PDF published to GitHub
 - website homepage and library feed refreshed with the new batch
