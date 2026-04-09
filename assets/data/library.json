@@ -10,9 +10,9 @@
                     "totalBatches":  5,
                     "totalRows":  2207452,
                     "significantHeadlines":  11,
-                    "totalPdfBytes":  14387875,
-                    "generatedAtUtc":  "2026-04-09T17:17:35Z",
-                    "generatedAtLabel":  "April 9, 2026 at 17:17 UTC",
+                    "totalPdfBytes":  13775970,
+                    "generatedAtUtc":  "2026-04-09T18:12:34Z",
+                    "generatedAtLabel":  "April 9, 2026 at 18:12 UTC",
                     "latestBatchDate":  "2026-04-09",
                     "latestBatchLabel":  "April 9, 2026"
                 },
@@ -351,8 +351,8 @@
                         "paperCount":  5,
                         "totalRows":  525242,
                         "totalEntitiesReported":  1156,
-                        "totalPdfBytes":  2861910,
-                        "totalPdfBytesMb":  2.73,
+                        "totalPdfBytes":  2250005,
+                        "totalPdfBytesMb":  2.15,
                         "significantCount":  1,
                         "papers":  [
                                        {
@@ -373,15 +373,15 @@
                                            "slug":  "ghosh-martin-pennings-wezel-2014-ambition-focus",
                                            "title":  "Ghosh, Martin, Pennings, and Wezel (2014)",
                                            "date":  "2026-04-04",
-                                           "pdfName":  "ghosh-2014-data-backed-reproduction.pdf",
-                                           "pdfUrl":  "papers/2026-04-04/ghosh-2014-data-backed-reproduction.pdf",
+                                           "pdfName":  null,
+                                           "pdfUrl":  null,
                                            "rows":  489193,
                                            "entities":  200,
                                            "headlineTerm":  "breadth x org_recomb_exp_log",
                                            "headlineEstimate":  -0.00218787548052927,
                                            "headlineP":  0.00760381295518021,
-                                           "pdfSizeBytes":  611905,
-                                           "pdfSizeLabel":  "598 KB"
+                                           "pdfSizeBytes":  null,
+                                           "pdfSizeLabel":  null
                                        },
                                        {
                                            "slug":  "katila-ahuja-2002-search-behavior",
