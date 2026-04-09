@@ -6,17 +6,99 @@
                  "pagesUrl":  "https://bobryceai.github.io/Replication-paper/"
              },
     "summary":  {
-                    "totalPapers":  20,
-                    "totalBatches":  4,
-                    "totalRows":  2152936,
-                    "significantHeadlines":  8,
-                    "totalPdfBytes":  11497194,
-                    "generatedAtUtc":  "2026-04-08T14:50:20Z",
-                    "generatedAtLabel":  "April 8, 2026 at 14:50 UTC",
-                    "latestBatchDate":  "2026-04-08",
-                    "latestBatchLabel":  "April 8, 2026"
+                    "totalPapers":  25,
+                    "totalBatches":  5,
+                    "totalRows":  2207452,
+                    "significantHeadlines":  11,
+                    "totalPdfBytes":  14387875,
+                    "generatedAtUtc":  "2026-04-09T17:17:35Z",
+                    "generatedAtLabel":  "April 9, 2026 at 17:17 UTC",
+                    "latestBatchDate":  "2026-04-09",
+                    "latestBatchLabel":  "April 9, 2026"
                 },
     "batches":  [
+                    {
+                        "date":  "2026-04-09",
+                        "dateLabel":  "April 9, 2026",
+                        "paperCount":  5,
+                        "totalRows":  54516,
+                        "totalEntitiesReported":  911,
+                        "totalPdfBytes":  2890681,
+                        "totalPdfBytesMb":  2.76,
+                        "significantCount":  3,
+                        "papers":  [
+                                       {
+                                           "slug":  "kneeland-schilling-aharonson-2020-outlier-innovation",
+                                           "title":  "Kneeland, Schilling, and Aharonson (2020)",
+                                           "date":  "2026-04-09",
+                                           "pdfName":  "kneeland-schilling-aharonson-2020-outlier-innovation.pdf",
+                                           "pdfUrl":  "papers/2026-04-09/kneeland-schilling-aharonson-2020-outlier-innovation.pdf",
+                                           "rows":  23901,
+                                           "entities":  184,
+                                           "headlineTerm":  "Distant recombination",
+                                           "headlineEstimate":  0.0202917616282998,
+                                           "headlineP":  0.0196542183047882,
+                                           "pdfSizeBytes":  582403,
+                                           "pdfSizeLabel":  "569 KB"
+                                       },
+                                       {
+                                           "slug":  "ahuja-2000-collaboration-networks",
+                                           "title":  "Ahuja (2000)",
+                                           "date":  "2026-04-09",
+                                           "pdfName":  "ahuja-2000-collaboration-networks.pdf",
+                                           "pdfUrl":  "papers/2026-04-09/ahuja-2000-collaboration-networks.pdf",
+                                           "rows":  2378,
+                                           "entities":  177,
+                                           "headlineTerm":  "Direct ties",
+                                           "headlineEstimate":  -0.0124849211494456,
+                                           "headlineP":  0.000180041837790886,
+                                           "pdfSizeBytes":  566901,
+                                           "pdfSizeLabel":  "554 KB"
+                                       },
+                                       {
+                                           "slug":  "bhaskarabhatla-hegde-2014-patenting-open-innovation",
+                                           "title":  "Bhaskarabhatla and Hegde (2014)",
+                                           "date":  "2026-04-09",
+                                           "pdfName":  "bhaskarabhatla-hegde-2014-patenting-open-innovation.pdf",
+                                           "pdfUrl":  "papers/2026-04-09/bhaskarabhatla-hegde-2014-patenting-open-innovation.pdf",
+                                           "rows":  1958,
+                                           "entities":  189,
+                                           "headlineTerm":  "Post-1989 electronics shift in patenting",
+                                           "headlineEstimate":  0.456890391972318,
+                                           "headlineP":  0.00110732382081617,
+                                           "pdfSizeBytes":  570416,
+                                           "pdfSizeLabel":  "557 KB"
+                                       },
+                                       {
+                                           "slug":  "rothaermel-hess-2007-dynamic-capabilities",
+                                           "title":  "Rothaermel and Hess (2007)",
+                                           "date":  "2026-04-09",
+                                           "pdfName":  "rothaermel-hess-2007-dynamic-capabilities.pdf",
+                                           "pdfUrl":  "papers/2026-04-09/rothaermel-hess-2007-dynamic-capabilities.pdf",
+                                           "rows":  23901,
+                                           "entities":  184,
+                                           "headlineTerm":  "Firm science x network ties",
+                                           "headlineEstimate":  2.24852097638587E-05,
+                                           "headlineP":  0.957419875477289,
+                                           "pdfSizeBytes":  589723,
+                                           "pdfSizeLabel":  "576 KB"
+                                       },
+                                       {
+                                           "slug":  "owen-smith-powell-2004-knowledge-networks",
+                                           "title":  "Owen-Smith and Powell (2004)",
+                                           "date":  "2026-04-09",
+                                           "pdfName":  "owen-smith-powell-2004-knowledge-networks.pdf",
+                                           "pdfUrl":  "papers/2026-04-09/owen-smith-powell-2004-knowledge-networks.pdf",
+                                           "rows":  2378,
+                                           "entities":  177,
+                                           "headlineTerm":  "Component size x open science",
+                                           "headlineEstimate":  0.000846222009477972,
+                                           "headlineP":  0.184835861717353,
+                                           "pdfSizeBytes":  581238,
+                                           "pdfSizeLabel":  "568 KB"
+                                       }
+                                   ]
+                    },
                     {
                         "date":  "2026-04-08",
                         "dateLabel":  "April 8, 2026",
