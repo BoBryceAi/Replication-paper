@@ -291,14 +291,17 @@ Write-TextFile -Path $siteDataPath -Lines @((ConvertTo-Json -Depth 8 -InputObjec
 $readmeLines = @'
 # AI-Augmented Replication in Management Science
 
+> *"Innovation points out paths that are possible; replication points out paths that are likely; progress relies on both."*
+> - Open Science Collaboration (2015, p. 943)
+
 Live site: <{SITE_URL}>
 
 Repository: <{REPO_URL}>
 
 This repository documents a live program of AI-assisted replication in strategy and innovation research.
-The central claim is practical rather than rhetorical: if AI can lower the time cost of reconstructing designs, assembling data, re-estimating models, and writing formal replication reports, then systematic replication becomes much more feasible in fields where verification has historically been too expensive.
+Its central claim is practical rather than rhetorical: if AI can lower the time cost of reconstructing designs, assembling data, re-estimating models, and writing formal replication reports, then systematic replication becomes much more feasible in fields where verification has historically been too expensive.
 
-The archive is therefore designed to do two things at once.
+The archive is designed to do two things at once.
 First, it publishes formal replication papers that reconstruct the original study logic as carefully as the current local data stack allows.
 Second, it creates a running record of what is codified and portable in published research, and what still depends on tacit judgment, hidden cleaning decisions, and context-specific interpretation.
 
@@ -325,23 +328,36 @@ When the architecture of a study is clearly written down, an AI-assisted reader 
 This is why the important boundary is not whether AI can read a paper.
 The important boundary is what remains tacit: judgment about construct validity, data exclusions, historical context, theoretical scope, and the unrecorded craft of empirical research.
 
-## How the Replication Workflow Works
+## How an AI Agent Replicates a Paper
 
-1. Paper-first reading.
-The workflow reads the original paper before estimating anything and reconstructs the published theory, sample, variable definitions, estimator, and identification logic.
+### Stage 1 - Claim Extraction
 
-2. Decision mapping.
-The workflow identifies every major decision point: what data are required, which measures are directly observable, which need local analogues, and where the local evidence chain departs from the source design.
+The workflow begins with paper-first reading.
+Before estimating anything, it reconstructs the original article's theory, focal claims, sample, variable definitions, estimator, and identification logic.
+The goal is not to paraphrase the abstract, but to recover the actual architecture of the published argument.
 
-3. Local data assembly.
-The workflow uses only processed datasets already present in the workspace.
-It does not invent unavailable results and does not claim a byte-identical rerun when the underlying source archives are absent.
+### Stage 2 - Data Assembly
 
-4. Estimation and comparison.
-The workflow estimates the local model, exports paper-level results, and compares the original article and the local replication on design, effects, interpretation, and conclusion.
+The workflow then identifies every major decision point: what data are required, which measures are directly observable, which need local analogues, and where the local evidence chain departs from the source design.
+Only processed datasets already present in the workspace are used.
+The workflow does not invent unavailable results and does not claim a byte-identical rerun when the underlying source archives are absent.
 
-5. Journal-style paper production.
-Each replication is written as a formal paper, compiled to PDF, and published into the archive together with refreshed website metadata.
+### Stage 3 - Specification and Estimation
+
+Once the local data boundary is explicit, the workflow estimates the local model, exports paper-level datasets, and records coefficient, fit, and sample files.
+This stage is where replication becomes operational rather than rhetorical: the paper must state exactly what was estimated from which processed local files.
+
+### Stage 4 - Effect Size Comparison
+
+The replication is not reduced to a single coefficient check.
+Each paper compares the original article and the local rerun on methodology, dataset architecture, focal effects, substantive interpretation, and final conclusion.
+This makes it possible to distinguish clean recovery, partial recovery, and meaningful divergence.
+
+### Stage 5 - Human Reflection (The Critical Step)
+
+The final step is interpretive.
+Even when the workflow can reconstruct a great deal of a study, the replication still has to ask what remains tacit: judgment about exclusions, historical context, construct validity, and theoretical scope.
+That reflection is part of the scientific contribution rather than an afterthought.
 
 ## Dataset Files Used in the Current Workflow
 
@@ -379,23 +395,22 @@ Different papers use different subsets of these files, but the following are the
 - `patent literature/daily_replications/YYYY-MM-DD/<paper-slug>/results/*_model_fit.csv`: model-fit statistics exported from the local estimation.
 - `patent literature/daily_replications/YYYY-MM-DD/<paper-slug>/results/*_sample_summary.csv`: sample counts and descriptive summary values used in the paper.
 
-## Why This Matters
+## Why This Matters: Three Audiences, Three Arguments
 
-### For Management and Strategy Research
+### For Management Scholars
 
 The replication burden in strategy research is unusually high because theory, measurement, and context are tightly coupled.
 That makes the field an especially useful setting for testing what AI can and cannot reconstruct from published work and a related data stack.
+
+### For Strategy Practitioners
+
+If AI lowers the cost of reconstructing codified knowledge, then the gap between published knowledge and imitable knowledge narrows.
+Understanding what remains tacit is therefore not just a scientific issue; it is also a strategic one.
 
 ### For the Open Science Community
 
 This archive treats AI-assisted replication as infrastructure.
 Instead of waiting for occasional hand-built replication projects, the workflow creates a lower-cost path for continuously checking published claims and documenting the boundary between robust transfer and fragile reconstruction.
-
-### For Strategy Practice
-
-The project also has a strategic implication.
-If AI lowers the cost of reconstructing codified knowledge, then the gap between published knowledge and imitable knowledge narrows.
-Understanding what remains tacit is therefore not just a scientific issue; it is also a strategic one.
 
 ## Current Archive
 '@ -replace '\{SITE_URL\}', $siteUrl -replace '\{REPO_URL\}', $repoUrl -split "`r?`n"
@@ -442,11 +457,37 @@ $readmeLines += @(
     "- a detailed comparison between the original paper and the local replication",
     "- explicit statements about the local data boundary and replication decisions",
     "",
-    "## Foundational Literature",
+    "## Theoretical Foundations",
     "",
-    "- Replication and reproducibility: Open Science Collaboration (2015); Camerer et al. (2016, 2018); Bettis et al. (2016).",
-    "- Knowledge-based and organizational-learning foundations: Nelson and Winter (1982); Barney (1991); Grant (1996); Cohen and Levinthal (1990); Nonaka (1994); Polanyi (1966).",
-    "- AI, knowledge work, and strategic implications: Dell'Acqua et al. (2023); Doshi and Hauser (2024); Doshi et al. (2025).",
+    "**The Replication Crisis**",
+    "",
+    "- Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. *Science, 349*(6251), aac4716. https://doi.org/10.1126/science.aac4716",
+    "- Camerer, C. F., Dreber, A., Forsell, E., Ho, T.-H., Huber, J., Johannesson, M., Kirchler, M., Almenberg, J., Altmejd, A., Chan, T., Heikensten, E., Holzmeister, F., Imai, T., Isaksson, S., Nave, G., Pfeiffer, T., Razen, M., & Wu, H. (2016). Evaluating replicability of laboratory experiments in economics. *Science, 351*(6280), 1433-1436. https://doi.org/10.1126/science.aaf0918",
+    "- Camerer, C. F., Dreber, A., Holzmeister, F., Ho, T.-H., Huber, J., Johannesson, M., Kirchler, M., Nave, G., Nosek, B. A., Pfeiffer, T., Altmejd, A., Buttrick, N., Chan, T., Chen, Y., Forsell, E., Gampa, A., Heikensten, E., Hummer, L., Imai, T., ... Wu, H. (2018). Evaluating the replicability of social science experiments in *Nature* and *Science* between 2010 and 2015. *Nature Human Behaviour, 2*(9), 637-644. https://doi.org/10.1038/s41562-018-0399-z",
+    "- Bettis, R. A., Ethiraj, S., Gambardella, A., Helfat, C., & Mitchell, W. (2016). Creating repeatable cumulative knowledge in strategic management. *Strategic Management Journal, 37*(2), 257-261. https://doi.org/10.1002/smj.2477",
+    "",
+    "**The Knowledge-Based View & Organizational Learning**",
+    "",
+    "- Nelson, R. R., & Winter, S. G. (1982). *An evolutionary theory of economic change*. Harvard University Press.",
+    "- Barney, J. (1991). Firm resources and sustained competitive advantage. *Journal of Management, 17*(1), 99-120. https://doi.org/10.1177/014920639101700108",
+    "- Grant, R. M. (1996). Toward a knowledge-based theory of the firm. *Strategic Management Journal, 17*(S2), 109-122. https://doi.org/10.1002/smj.4250171110",
+    "- Cohen, W. M., & Levinthal, D. A. (1990). Absorptive capacity: A new perspective on learning and innovation. *Administrative Science Quarterly, 35*(1), 128-152. https://doi.org/10.2307/2393553",
+    "- Nonaka, I. (1994). A dynamic theory of organizational knowledge creation. *Organization Science, 5*(1), 14-37. https://doi.org/10.1287/orsc.5.1.14",
+    "- Polanyi, M. (1966). *The tacit dimension*. University of Chicago Press.",
+    "",
+    "**AI, Knowledge Work, and Strategic Implications**",
+    "",
+    "- Dell'Acqua, F., McFowland, E., Mollick, E. R., Lifshitz-Assaf, H., Kellogg, K. C., Rajendran, S., Krayer, L., Candelon, F., & Lakhani, K. R. (2023). Navigating the jagged technological frontier: Field experimental evidence of the effects of AI on knowledge worker productivity and quality. *Harvard Business School Working Paper* No. 24-013. https://doi.org/10.2139/ssrn.4573321",
+    "- Doshi, A. R., & Hauser, O. P. (2024). Generative AI enhances individual creativity but reduces the collective diversity of novel content. *Science Advances, 10*(28), eadn5290. https://doi.org/10.1126/sciadv.adn5290",
+    "- Doshi, A. R., Bell, J. J., Mirzayev, E., & Vanneste, B. (2025). Generative artificial intelligence and evaluating strategic decisions. *Strategic Management Journal, 46*(4). https://doi.org/10.1002/smj.3677",
+    "",
+    "## How to Contribute",
+    "",
+    "1. Read a source paper closely before touching the data.",
+    "2. Identify the required data objects and map them to the processed local files that actually exist in the workspace.",
+    "3. Build the replication around the executable local dataset rather than imagined source archives or unavailable raw inputs.",
+    "4. Write the comparison section explicitly: original methodology, local dataset architecture, focal effects, interpretation, and conclusion.",
+    "5. Keep human reflection in the loop by recording what appears codified and what still looks tacit or judgment-heavy.",
     "",
     "## Local Refresh Tools",
     "",
@@ -467,7 +508,7 @@ $readmeLines += @(
     "",
     "## About",
     "",
-    "This repository is maintained as an ongoing project on AI-assisted replication in management science and strategy research.",
+    "This repository is maintained as an ongoing project on AI-augmented reproducibility in management science and strategy research.",
     "Contact: [GitHub](https://github.com/BoBryceAi)",
     "",
     "The archive is a living document. It is intended to grow as more replications are completed, more data boundaries are documented, and the gap between codified and tacit knowledge becomes easier to study directly."
