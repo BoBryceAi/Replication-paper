@@ -4,13 +4,59 @@ Live site: <https://bobryceai.github.io/Replication-paper/>
 
 Repository: <https://github.com/BoBryceAi/Replication-paper>
 
-This repository is the public website and PDF archive for AI-assisted strategy replication papers generated from the local calculated-replication workflow.
+This repository is the public website and PDF archive for AI-assisted, data-backed replication papers in strategy and innovation research.
+Each paper is published only after the workflow reconstructs the original study design, states the local data boundary clearly, and compares the original result with the local replication result.
 
-## What the site publishes
+## What this repository contains
 
 - formal journal-style replication PDFs
 - batch-level paper library metadata
 - a GitHub Pages front end that refreshes when new batches are published
+- the workflow and skill files that turn local replication folders into public outputs
+
+## Replication standard
+
+- read the original paper first and reconstruct the published methodology before estimating the local analogue
+- identify the required data objects and name the exact processed local datasets used in the manuscript body
+- separate direct source facts from local replication decisions instead of blending them together
+- compare the original paper and the replication on data architecture, estimand, effect pattern, and conclusion
+- publish only compiled PDFs together with refreshed site metadata
+
+## Dataset files used in the local workflow
+
+The archive is built from processed local datasets that already exist in the workspace.
+Not every paper uses every file, but the current replication pipeline draws from the following core inputs.
+
+### Base patent-to-firm mapping and firm controls
+
+- `Data_Analysis/code/Regression/input/sp500_patents_firm_level_1986_2016_gvkey.csv` - patent-to-firm bridge used to map `patent_id`, `gvkey`, `permno`, and grant timing.
+- `Data_Analysis/code/Regression/input/g_uspc_at_issue.tsv` - primary USPC class mapping used for technology-class controls and class fixed effects.
+- `Data_Analysis/code/Regression/input/firmyear_active_years_from_stocknames_plus_sp500flag_1986_2016.csv` - firm-year activity panel used to define active observations and S&P 500 membership.
+- `Data_Analysis/input_files/crsp/funda_annual.csv` - annual accounting file used to derive `log_assets`, `rd_intensity`, `roa`, leverage, cash, and market-value style controls.
+
+### DISCERN science and non-patent literature files
+
+- `Data_Analysis/code/SP500_gvkey_permno/DISCERN_DEC_2020/data/pub_per_year_permno_adj.dta` - yearly firm publication counts.
+- `Data_Analysis/code/SP500_gvkey_permno/DISCERN_DEC_2020/data/pat_per_year_permno_adj.dta` - yearly firm patent counts in the DISCERN-linked panel.
+- `Data_Analysis/code/SP500_gvkey_permno/DISCERN_DEC_2020/data/pub_stock_permno_adj.dta` - cumulative publication stock by firm-year.
+- `Data_Analysis/code/SP500_gvkey_permno/DISCERN_DEC_2020/data/pat_stock_permno_adj.dta` - cumulative patent stock by firm-year.
+- `Data_Analysis/code/SP500_gvkey_permno/DISCERN_DEC_2020/data/corp_NPL_cite_per_year_firm_80_15.dta` - internal and external science-channel measures based on non-patent literature citations.
+
+### Patent recombination, impact, and citation files
+
+- `Data_Analysis/output_files/USPTO_Focal/USPTO_focal_recombination_1986_2016_recombtypes_exp.csv` - patent-level recombination breadth, recombination degree, and prior-experience measures.
+- `Data_Analysis/code/Regression/output/gvkey_clean_reproduction_dataset.csv` - cleaned patent outcome panel with inventive impact, top-tail indicators, prior-art counts, firm age, and same-year patent totals.
+- `Data_Analysis/output_files/Focal Patent/discern_focal_backward_patent_uspc_primary.csv` - backward patent-link file used to build rolling firm citation networks.
+- `Data_Analysis/output_files/Focal Patent/discern_backward_app_citations_long.csv` - applicant, examiner, and other backward citation channels used in citation-practice replications.
+- `Data_Analysis/output_files/kpss_dataset/DATASET2.csv` - patent-quality panel used in the Moser-style citation-quality analogue.
+
+### AI and paper-specific augmentation files
+
+- `Data_Analysis/code/Regression/output/ai_subfield_patent_classification.csv` - patent-level AI tags and subfield scores used in AI-enabled innovation replications.
+- `patent literature/daily_replications/YYYY-MM-DD/<paper-slug>/results/*_analysis_dataset.csv` - the paper-level estimation dataset exported for each replication.
+- `patent literature/daily_replications/YYYY-MM-DD/<paper-slug>/results/*_model_coefficients.csv` - the coefficient table used in the manuscript and website summary.
+- `patent literature/daily_replications/YYYY-MM-DD/<paper-slug>/results/*_model_fit.csv` - fit statistics exported from the local model.
+- `patent literature/daily_replications/YYYY-MM-DD/<paper-slug>/results/*_sample_summary.csv` - sample counts and descriptive summary values used in the paper.
 
 ## Current site totals
 
@@ -27,6 +73,14 @@ This repository is the public website and PDF archive for AI-assisted strategy r
 - [Bhaskarabhatla and Hegde (2014)](papers/2026-04-09/bhaskarabhatla-hegde-2014-patenting-open-innovation.pdf) - rows: 1,958, entities: 189, `Post-1989 electronics shift in patenting = 0.4569`; `p = 0.001`
 - [Rothaermel and Hess (2007)](papers/2026-04-09/rothaermel-hess-2007-dynamic-capabilities.pdf) - rows: 23,901, entities: 184, `Firm science x network ties = 0`; `p = 0.96`
 - [Owen-Smith and Powell (2004)](papers/2026-04-09/owen-smith-powell-2004-knowledge-networks.pdf) - rows: 2,378, entities: 177, `Component size x open science = 0.0008`; `p = 0.18`
+
+## Repository layout
+
+- `papers/YYYY-MM-DD/` stores the published PDFs for each batch.
+- `assets/data/library.json` stores the structured metadata used by the website.
+- `tools/publish-batch.ps1` publishes a local batch into the site repository.
+- `tools/update-site.ps1` rebuilds the website metadata and README from the currently published batches.
+- `skills/write-replication-journal-github/SKILL.md` documents the manuscript and publishing standard.
 
 ## Local refresh tools
 
