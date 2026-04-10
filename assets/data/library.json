@@ -6,17 +6,99 @@
                  "pagesUrl":  "https://bobryceai.github.io/Replication-paper/"
              },
     "summary":  {
-                    "totalPapers":  25,
-                    "totalBatches":  5,
-                    "totalRows":  2207452,
-                    "significantHeadlines":  11,
-                    "totalPdfBytes":  13775970,
-                    "generatedAtUtc":  "2026-04-09T18:12:34Z",
-                    "generatedAtLabel":  "April 9, 2026 at 18:12 UTC",
-                    "latestBatchDate":  "2026-04-09",
-                    "latestBatchLabel":  "April 9, 2026"
+                    "totalPapers":  30,
+                    "totalBatches":  6,
+                    "totalRows":  2951882,
+                    "significantHeadlines":  12,
+                    "totalPdfBytes":  16649925,
+                    "generatedAtUtc":  "2026-04-10T08:57:36Z",
+                    "generatedAtLabel":  "April 10, 2026 at 08:57 UTC",
+                    "latestBatchDate":  "2026-04-10",
+                    "latestBatchLabel":  "April 10, 2026"
                 },
     "batches":  [
+                    {
+                        "date":  "2026-04-10",
+                        "dateLabel":  "April 10, 2026",
+                        "paperCount":  5,
+                        "totalRows":  744430,
+                        "totalEntitiesReported":  1094,
+                        "totalPdfBytes":  2873955,
+                        "totalPdfBytesMb":  2.74,
+                        "significantCount":  1,
+                        "papers":  [
+                                       {
+                                           "slug":  "moser-ohmstedt-rhode-2018-patent-citations",
+                                           "title":  "Moser, Ohmstedt, and Rhode (2018)",
+                                           "date":  "2026-04-10",
+                                           "pdfName":  "moser-ohmstedt-rhode-2018-patent-citations.pdf",
+                                           "pdfUrl":  "papers/2026-04-10/moser-ohmstedt-rhode-2018-patent-citations.pdf",
+                                           "rows":  712375,
+                                           "entities":  345,
+                                           "headlineTerm":  "Patent quality",
+                                           "headlineEstimate":  0.0963013862739361,
+                                           "headlineP":  1.46949454675899E-08,
+                                           "pdfSizeBytes":  561893,
+                                           "pdfSizeLabel":  "549 KB"
+                                       },
+                                       {
+                                           "slug":  "bhaskarabhatla-hegde-2014-patenting-open-innovation",
+                                           "title":  "Bhaskarabhatla and Hegde (2014)",
+                                           "date":  "2026-04-10",
+                                           "pdfName":  "bhaskarabhatla-hegde-2014-patenting-open-innovation.pdf",
+                                           "pdfUrl":  "papers/2026-04-10/bhaskarabhatla-hegde-2014-patenting-open-innovation.pdf",
+                                           "rows":  3265,
+                                           "entities":  210,
+                                           "headlineTerm":  "Post-1989 electronics shift in patenting",
+                                           "headlineEstimate":  0.274785664950397,
+                                           "headlineP":  0.181166463869815,
+                                           "pdfSizeBytes":  574738,
+                                           "pdfSizeLabel":  "561 KB"
+                                       },
+                                       {
+                                           "slug":  "roach-cohen-2013-public-research-knowledge-flows",
+                                           "title":  "Roach and Cohen (2013)",
+                                           "date":  "2026-04-10",
+                                           "pdfName":  "roach-cohen-2013-public-research-knowledge-flows.pdf",
+                                           "pdfUrl":  "papers/2026-04-10/roach-cohen-2013-public-research-knowledge-flows.pdf",
+                                           "rows":  2511,
+                                           "entities":  178,
+                                           "headlineTerm":  "External public-research citations",
+                                           "headlineEstimate":  0.0220385648435739,
+                                           "headlineP":  0.589344955260918,
+                                           "pdfSizeBytes":  575967,
+                                           "pdfSizeLabel":  "562 KB"
+                                       },
+                                       {
+                                           "slug":  "owen-smith-powell-2004-knowledge-networks",
+                                           "title":  "Owen-Smith and Powell (2004)",
+                                           "date":  "2026-04-10",
+                                           "pdfName":  "owen-smith-powell-2004-knowledge-networks.pdf",
+                                           "pdfUrl":  "papers/2026-04-10/owen-smith-powell-2004-knowledge-networks.pdf",
+                                           "rows":  2378,
+                                           "entities":  177,
+                                           "headlineTerm":  "Component size x open science",
+                                           "headlineEstimate":  0.000846222009477972,
+                                           "headlineP":  0.184835861717353,
+                                           "pdfSizeBytes":  581190,
+                                           "pdfSizeLabel":  "568 KB"
+                                       },
+                                       {
+                                           "slug":  "wu-hitt-lou-2020-data-analytics-innovation",
+                                           "title":  "Wu, Hitt, and Lou (2020)",
+                                           "date":  "2026-04-10",
+                                           "pdfName":  "wu-hitt-lou-2020-data-analytics-innovation.pdf",
+                                           "pdfUrl":  "papers/2026-04-10/wu-hitt-lou-2020-data-analytics-innovation.pdf",
+                                           "rows":  23901,
+                                           "entities":  184,
+                                           "headlineTerm":  "AI score x breadth of recombination",
+                                           "headlineEstimate":  -0.00239006715673665,
+                                           "headlineP":  0.743227692197849,
+                                           "pdfSizeBytes":  580167,
+                                           "pdfSizeLabel":  "567 KB"
+                                       }
+                                   ]
+                    },
                     {
                         "date":  "2026-04-09",
                         "dateLabel":  "April 9, 2026",

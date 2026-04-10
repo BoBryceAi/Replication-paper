@@ -123,19 +123,19 @@ Instead of waiting for occasional hand-built replication projects, the workflow 
 
 ## Current Archive
 
-- published papers: 25
-- published batches: 5
-- analyzed rows across batches: 2,207,452
-- headline estimates with p < .05: 11
-- latest batch: April 9, 2026
+- published papers: 30
+- published batches: 6
+- analyzed rows across batches: 2,951,882
+- headline estimates with p < .05: 12
+- latest batch: April 10, 2026
 
 ## Latest Batch
 
-- [Kneeland, Schilling, and Aharonson (2020)](papers/2026-04-09/kneeland-schilling-aharonson-2020-outlier-innovation.pdf) - rows: 23,901, entities: 184, `Distant recombination = 0.0203`; `p = 0.020`
-- [Ahuja (2000)](papers/2026-04-09/ahuja-2000-collaboration-networks.pdf) - rows: 2,378, entities: 177, `Direct ties = -0.0125`; `p = < .001`
-- [Bhaskarabhatla and Hegde (2014)](papers/2026-04-09/bhaskarabhatla-hegde-2014-patenting-open-innovation.pdf) - rows: 1,958, entities: 189, `Post-1989 electronics shift in patenting = 0.4569`; `p = 0.001`
-- [Rothaermel and Hess (2007)](papers/2026-04-09/rothaermel-hess-2007-dynamic-capabilities.pdf) - rows: 23,901, entities: 184, `Firm science x network ties = 0`; `p = 0.96`
-- [Owen-Smith and Powell (2004)](papers/2026-04-09/owen-smith-powell-2004-knowledge-networks.pdf) - rows: 2,378, entities: 177, `Component size x open science = 0.0008`; `p = 0.18`
+- [Moser, Ohmstedt, and Rhode (2018)](papers/2026-04-10/moser-ohmstedt-rhode-2018-patent-citations.pdf) - rows: 712,375, entities: 345, `Patent quality = 0.0963`; `p = < .001`
+- [Bhaskarabhatla and Hegde (2014)](papers/2026-04-10/bhaskarabhatla-hegde-2014-patenting-open-innovation.pdf) - rows: 3,265, entities: 210, `Post-1989 electronics shift in patenting = 0.2748`; `p = 0.18`
+- [Roach and Cohen (2013)](papers/2026-04-10/roach-cohen-2013-public-research-knowledge-flows.pdf) - rows: 2,511, entities: 178, `External public-research citations = 0.022`; `p = 0.59`
+- [Owen-Smith and Powell (2004)](papers/2026-04-10/owen-smith-powell-2004-knowledge-networks.pdf) - rows: 2,378, entities: 177, `Component size x open science = 0.0008`; `p = 0.18`
+- [Wu, Hitt, and Lou (2020)](papers/2026-04-10/wu-hitt-lou-2020-data-analytics-innovation.pdf) - rows: 23,901, entities: 184, `AI score x breadth of recombination = -0.0024`; `p = 0.74`
 
 ## Repository Structure
 
